@@ -1,22 +1,15 @@
 extends _components/_layout/_layout.pug
 
 block var
-	- let title = 'TRANG CHỦ';
+	- let title = 'Tin tức DS';
 	- let bodyClass = 'index-page';
-	- let titlePosition = ['Trang Chu'];
+	- let titlePosition = ['Tin Tuc'];
 block banner,breadcrumb
 	
 block main
-	include ./_components/banner/homebanner.pug
-	include ./_components/index/i-1.pug
-	include ./_components/index/i-2.pug
-	include ./_components/index/i-3.pug
-	include ./_components/index/i-4.pug
-	include ./_components/index/i-5.pug
-	include ./_components/index/i-6.pug
-	include ./_components/index/i-7.pug
-	include ./_components/index/i-8.pug
-	include ./_components/index/i-9.pug
-	include ./_components/index/i-10.pug
-	include ./_components/index/i-11.pug
+	include ./_components/banner/padding-top.pug
+	include ./_components/banner/pages-banner.pug
+	include ./_components/_layout/_breadcrumb.pug
+	include ./_components/tin-tuc/news-list.pug
+	
 block scripts
