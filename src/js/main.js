@@ -41,10 +41,10 @@ const checkLayoutBanner = () => {
 	const heightHeader = $("header").outerHeight();
 	const mainBanner = $("#home-banner");
 
-	if (mainBanner.length < 1) {
-		pagesBanner.css('padding-top', heightHeader);
+	if ((mainBanner.length < 1) && ($(window).width() >= 1024)) {
+		pagesBanner.css('padding-top', heightHeader + 13);
 	} else {
-		mainBanner.css('padding-top', heightHeader);
+		mainBanner.css('padding-top', heightHeader + 13);
 	}
 };
 document.addEventListener('DOMContentLoaded', () => {
