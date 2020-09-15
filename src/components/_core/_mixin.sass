@@ -1,0 +1,43 @@
+=flexcenter()
+	display: flex
+	justify-content: center
+	align-items: center
+=line($line)
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-line-clamp: $line
+	-webkit-box-orient: vertical
+=img-scale($ratio)
+	padding-top: ($ratio * 100%)
+	display: block
+	position: relative
+	img
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		object-fit: cover
+=iframe-scale($ratio)
+	padding-top: ($ratio * 100%)
+	display: block
+	position: relative
+	iframe
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		object-fit: cover
+=hover-underline($ratio, $color)
+	position: relative
+	transition: background-size .6s ease
+	background-image: linear-gradient(180deg,transparent $ratio, $color 0)
+	background-repeat: no-repeat
+	background-size: 0 100%
+	&:hover
+		background-size: 100% 100%
+=gg-speed($auto: auto, $grid)
+	content-visibility: $auto
+	contain-intrinsic-size: $grid
