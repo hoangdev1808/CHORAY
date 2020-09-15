@@ -48,7 +48,7 @@ body
 	padding-top: 0
 	margin-bottom: 40px
 
-	h1 
+	h2 
 		font-size: 36px
 		font-family: "Montserrat"
 		font-weight: bold
@@ -412,9 +412,6 @@ body
 		opacity: 0
 		transition-property: transform, opacity
 		transition-duration: .4s
-	
-
-
 .fancybox-slide--current 
 	.searchbox 
 		transform: translateY(0)
@@ -431,5 +428,24 @@ body
 			opacity: 1
 			transition-delay: .3s
 		
+.lcl 
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-box-orient: vertical
+
+	&-1 
+		-webkit-line-clamp: 1
 	
+
+	&-2 
+		-webkit-line-clamp: 2
+		
+	&-3 
+		-webkit-line-clamp: 3
+	
+	&-4 
+		-webkit-line-clamp: 4
+	
+
 
