@@ -40,15 +40,17 @@ section.tuyendung-position
 	.tuyendung-ps-table
 		padding: 35px 37px 35px 37px
 		box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.15)
+		
 		table
 			width: 100%
-			thead
+			tbody
 				tr 
 					display: flex
 					align-items: center
 					justify-content: space-between
 					padding: 17px 21px
-					th 
+				&:nth-of-type(1)
+					tr 
 						background: $main-color
 						th
 							color: white
