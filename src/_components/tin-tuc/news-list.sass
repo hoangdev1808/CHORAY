@@ -17,10 +17,16 @@ section.pages-tintuc
 			border: thin solid #ececec
 			transition: 0.2s ease-in
 			.tintuc-img
+				overflow: hidden
 				img 
 					width: 100% 
+					transition: 0.5s
+					
 			&:hover
 				background-color: #f8f8f8
+				.tintuc-img 
+					img 
+						transform: scale(1.2)
 				.section-title
 					color: #01a8e3
 			.tintuc-content 
