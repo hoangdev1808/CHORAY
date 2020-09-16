@@ -41,15 +41,38 @@ const checkLayoutBanner = () => {
 	const heightHeader = $("header").outerHeight();
 	const mainBanner = $("#home-banner");
 
-	if ((mainBanner.length < 1) && ($(window).width() >= 1024)) {
-		pagesBanner.css('padding-top', heightHeader + 13);
-	} else {
-		mainBanner.css('padding-top', heightHeader + 13);
+	if (mainBanner.length < 1) {
+		pagesBanner.css('padding-top', heightHeader);
 	}
-};
+	else if(mainBanner.length < 1 && pagesBanner.length < 1){
+		breadcrumb.css('padding-top', heightHeader);
+	}else {
+		mainBanner.css('padding-top', heightHeader);
+	}
+
+}
+
+// Menu Left
+function MenuLeft(){
+	$('.acc').find('.acc__panel:first').addClass('show');
+	$('.acc__title').click(function(j) {
+		var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+		$(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+		if ($(this).hasClass('active')) {
+		$(this).removeClass('active');
+		} else {
+		$(this).closest('.acc').find('.acc__title.active').removeClass('active');
+		$(this).addClass('active');
+		}
+		dropDown.stop(false, true).slideToggle();
+		j.preventDefault();
+	});
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	toggleMenuMobile();
 	moveNavitem();
 	CrMainBanner();
-	checkLayoutBanner()
+	checkLayoutBanner();
+	MenuLeft();
 });

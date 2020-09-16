@@ -130,7 +130,8 @@ header
 				.hotline
 					display: flex
 					align-items: center
-					.ri-phone-line
+					.icon
+						margin-right: 8px
 						margin-left: 0
 						border-width: 1px
 						border-color: rgb(229, 229, 229)
@@ -138,11 +139,12 @@ header
 						width: 30px
 						height: 30px
 						text-align: center
-						line-height: 30px
-						font-size: 24px
-						font-family: "remixicon"
-						color: rgb(1, 168, 227)
-						margin-right: 8px
+						.ri-phone-line
+							text-align: center
+							line-height: 30px
+							font-size: 24px
+							font-family: "remixicon"
+							color: rgb(1, 168, 227)
 
 					ul
 						list-style: none
@@ -153,7 +155,7 @@ header
 								font-family: "Sarabun"
 								color: rgb(153, 153, 153)
 							&:last-child
-								p
+								a
 									font-size: 16px;
 									color: rgb(1, 168, 227);
 									font-weight: bold;
@@ -209,12 +211,13 @@ header
 					.hotline
 						display: flex
 						align-items: center
-						.ri-phone-line
-							margin-left: 0
-							font-size: 16px
-							font-family: "remixicon"
-							color: rgb(1, 168, 227)
-							margin-right: 8px
+						.icon
+							.ri-phone-line
+								margin-left: 0
+								font-size: 16px
+								font-family: "remixicon"
+								color: rgb(1, 168, 227)
+								margin-right: 8px
 
 						ul
 							list-style: none
@@ -224,7 +227,7 @@ header
 								&:first-child
 									display: none
 								&:last-child
-									p
+									a
 										font-size: 14px;
 										color: rgb(1, 168, 227);
 										font-weight: bold;

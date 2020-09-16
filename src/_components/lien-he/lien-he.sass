@@ -1,0 +1,163 @@
+.cr-contact 
+	width: 100%
+	height: 100%
+	background-image: url('../assets/images/index/contact.png')
+	background-position: center
+	background-repeat: no-repeat
+	.block-title
+		margin-bottom: 30px
+	.infor 
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15)
+		width: 100%
+		height: 420px
+		padding: 84px 75px
+		padding-bottom: 0
+		&__logo 
+			width: 102px
+			height: 91px
+			margin: 0 auto
+
+			img 
+				width: 100%
+				height: 100%
+
+		&__address 
+			padding-top: 30px
+
+			ul 
+				padding: 0
+				list-style: none
+
+				li 
+					display: flex
+					span 
+						i 
+							margin-right: 10px
+							color: #333333
+							font-size: 16px
+							line-height: 24px
+					p 
+						font-size: 15px
+						font-family: "Sarabun"
+						color: #333333
+					&:first-child
+						margin-bottom: 32px
+		@media screen and ( min-width: 1200px)
+			width: 495px
+		@media screen and ( max-width: 1024px)
+			padding: 55px
+		@media screen and ( max-width: 767px)
+			margin-bottom: 30px
+			padding: 30px
+			height: auto
+	.wrap-form>div 
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		span 
+			color: red
+			font-size: 13px
+			font-family: 'Sarabun'
+			font-weight: normal
+
+			&::before 
+				content: ''
+
+
+	.box-form 
+		width: 100%
+		.form-row
+			.form-group 
+				input 
+					border: solid 1px #e1e1e1
+					width: 100%
+					height: 45px
+					padding-left: 15px
+
+					&::placeholder 
+						font-size: 16px
+				&:first-child
+					padding-right: 5px
+					padding-left: 5px
+				&:last-child
+					padding-left: 5px
+					padding-right: 5px
+		.form-group 
+			input 
+				border: solid 1px #e1e1e1
+				width: 100%
+				height: 45px
+				padding-left: 15px
+				&::placeholder 
+					font-size: 16px
+			textarea 
+				border: 1px solid #e1e1e1
+				width: 100%
+				height: 148px
+				color: #333
+				caret-color: #064975
+				font-size: 15px
+				padding-left: 15px
+		.frm-btnwrap 
+			width: 100%
+			label 
+				display: none
+
+			.frm-btn 
+				width: 150px
+				height: 46px
+				margin-left: auto
+				display: flex
+				align-items: center
+
+				input 
+					text-align: center
+					border-radius: 0
+					padding-left: 0
+					font-size: 16px
+					font-family: "Sarabun"
+					color: rgb(255, 255, 255)
+					font-weight: bold
+					text-transform: uppercase
+					border: none
+					background: #01a8e3
+					transition: all ease-in-out .3s
+				.material-icons
+					margin-left: -50px
+					color: #ffffff
+					font-size: 20px
+				&:hover
+					input
+						background-image: linear-gradient( 25deg, #01a8e3 0%, #7fd3f1 100%)
+						transition: all ease-in-out .3s
+
+			@media(max-width: 1024px) 
+				width: unset
+				margin-top: 15px
+
+			.frm-btn-reset 
+				display: none
+
+		@media screen and ( min-width: 1200px)
+			width: 670px
+			.form-row
+				.form-group 
+					&:first-child
+						padding-right: 15px
+						padding-left: 5px
+					&:last-child
+						padding-left: 15px
+						padding-right: 5px
+.map
+	padding-top: 0
+	.map-wrapper 
+		width: 100%
+		height: 500px
+		padding-top: 0
+
+		iframe 
+			width: 100%
+			height: 100%
+		@media screen and ( max-width: 575px)
+			height: 345px

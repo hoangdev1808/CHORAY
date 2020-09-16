@@ -7,7 +7,7 @@ import {
 } from "graceful-fs";
 
 export const copyImage = () => {
-	return src("./src/assets/**/**.{svg,png,jpg,speg,gif,jpge,PNG,JPGE,JPG,SVG,GIF,SPEG,mp4}")
+	return src("src/assets/**/**.{svg,png,jpg,jpeg,gif,mp4}")
 		.pipe(dest("_dist/assets"))
 }
 
