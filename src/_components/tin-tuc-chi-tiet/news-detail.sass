@@ -1,0 +1,105 @@
+.news-detail
+    img 
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .section-title
+        color: #333333
+        font-size: 24px
+        font-weight: 700
+    .date-social
+        display: flex
+        justify-content: space-between
+        margin-top: 9px
+        border-bottom: 1px solid #e0e0e0
+        padding-bottom: 8px
+        margin-bottom: 25px
+        .date
+            color: #999999
+            font-size: 13px
+            font-weight: 400
+            letter-spacing: 0.65px
+        .social
+            display: flex
+            align-items: center
+            a 
+                width: 31px
+                height: 14px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: white
+                i 
+                    font-size: 7px
+            .social-fb
+                background-color: #3b5c9f
+                margin-left: 5px
+            .social-tw
+                background-color: #429dd6
+    .content
+        b 
+            margin-bottom: 17px
+            display: block
+        p
+            display: block
+            margin-bottom: 24px
+            line-height: 24px
+            font-size: 16px
+            font-weight: 400
+        img 
+            display: block
+            margin-bottom: 24px
+            width: 100%
+            object-fit: cover
+            max-height: auto
+            &:last-child
+                margin-bottom: 10px
+    .title-sidebar
+            height: 50px
+            background-color: #01a8e3
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #ffffff
+            font-size: 24px
+            font-weight: 700
+            @media (max-width: 1200px)
+                margin-top: 20px
+
+    .tintuc-sidebar
+        width: 100%
+        border: 1px solid #e0e0e0
+        padding: 22px 20px!important
+        li 
+            list-style: none
+            &:not(:last-child)
+                padding-bottom: 20px
+                border-bottom: 1px solid #f1f1f1
+                margin-bottom: 20px
+            a
+                display: flex
+                .img
+                    flex: 0 0 105px
+                    height: 70px
+                    overflow: hidden
+                    margin-right: 8px
+                .tintuc-text
+                    flex: 1
+                    max-height: 70px
+                    overflow: hidden
+                    .date
+                        color: #999999
+                        font-size: 13px
+                        font-weight: 400
+                        letter-spacing: 0.65px
+                    .text
+                        color: #111111
+                        font-family: Sarabun
+                        font-size: 16px
+                        font-weight: 500
+                        text-overflow: clip!important
+                        transition: .25s ease
+                        line-height: 1.5
+                &:hover .text 
+                    color: #01a8e3
+

@@ -5,7 +5,10 @@ block var
 	- let bodyClass = 'index-page';
 	- let titlePosition = ['Trang Chu'];
 block banner,breadcrumb
-	include ../_components/banner/homebanner.pug
+
 block main
+	include ../_components/banner/pages-banner.pug
+	include ../_components/_layout/_breadcrumb.pug
+	include ../_components/tuyen-dung/hr-list.pug
 	
 block scripts

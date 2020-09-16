@@ -1,0 +1,159 @@
+.hr-detail
+    img 
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .section-title
+        color: #333333
+        font-size: 24px
+        font-weight: 700
+    .date-social
+        display: flex
+        justify-content: space-between
+        margin-top: 9px
+        border-bottom: 1px solid #e0e0e0
+        padding-bottom: 8px
+        margin-bottom: 25px
+        .date
+            color: #999999
+            font-size: 13px
+            font-weight: 400
+            letter-spacing: 0.65px
+        .social
+            display: flex
+            align-items: center
+            a 
+                width: 35px
+                height: 20px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: white
+                i 
+                    font-size: 12px
+            .social-fb
+                background-color: #3b5c9f
+                margin-right: 10px
+            .social-tw
+                background-color: #429dd6
+    .hr-1
+        table 
+            padding: 29px 10px 16px 29px
+            background-color: #f9f9f9
+            width: 100%
+            display: block
+            tr
+                margin-bottom: 18px
+                display: block
+                th 
+                    color: #333333
+                    font-size: 18px
+                    font-weight: 700
+                    width: 188px
+                    @media ( max-width: 500px )
+                        width: 165px
+                        font-size: 16px
+                td 
+                    color: #666666
+                    font-size: 18px
+                    font-weight: 400
+                    @media ( max-width: 500px )
+                        font-size: 16px
+                    &::before
+                        content: ":"
+                        margin-right: 5px
+    .hr-2
+        .t-4
+            margin-top: 40px
+        .title
+            display: flex
+            align-items: flex-end
+            margin-bottom: 18px
+            margin-top: 30px
+            .icon
+                width: 26px
+                height: 25px
+                display: inline-block
+                margin-right: 19px
+            span 
+                color: #01a8e3
+                font-size: 24px
+                font-weight: 400
+                margin-right: 20px
+            .text
+                color: #01a8e3
+                font-size: 18px
+                font-weight: 700
+                text-transform: uppercase
+        ul 
+            padding: 0
+            li 
+                list-style: none
+                display: flex
+                align-items: center
+                position: relative
+                padding-left: 25px
+                span 
+                    color: #333333
+                    font-size: 16px
+                    font-weight: 400
+                    margin-right: 8px
+                &::before
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%)
+                    font-family: 'Material Icons'
+                    color: #333333
+                    font-size: 16px
+                    font-weight: 400
+                    content: 'keyboard_arrow_right'
+    .hr-3
+        margin-top: 26px
+    .sidebar-title
+        background-color: #f9f9f9
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #333333
+        font-size: 24px
+        font-weight: 700
+        height: 50px
+        margin-top: 40px
+    .ttlh
+        ul
+            padding: 20px 22px 10px 15px
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1)
+            background-color: #ffffff
+            li 
+                list-style: none
+                display: flex
+                align-items: baseline
+                margin-bottom: 10px
+                span 
+                    color: #01a8e3
+                    font-size: 16px
+                    font-weight: 400
+                    margin-right: 4px
+    .vtk
+        ul 
+            list-style: none
+            padding: 0
+            li     
+                padding: 10px 20px
+                transition: .25s ease
+                cursor: pointer
+                .text
+                    color: #333333
+                    font-size: 16px
+                    font-weight: 700
+                .date
+                    color: #999999
+                    font-size: 14px
+                    font-weight: 500
+                &:hover
+                    background-color: #01a8e3
+                    .text
+                        color: white
+                    .date
+                        color: white
