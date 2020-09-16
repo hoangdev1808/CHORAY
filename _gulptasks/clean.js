@@ -5,7 +5,7 @@ export const cleanDist = () => {
 }
 
 export const cleanImage = () => {
-	return del("dist/assets")
+	return del("_dist/assets")
 }
 
 module.exports = {

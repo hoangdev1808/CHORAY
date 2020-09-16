@@ -18,7 +18,7 @@ export const jsTask = () => {
 		.pipe(uglifyBabel())
 		.pipe(rename("main.min.js"))
 		.pipe(sourcemap.write("."))
-		.pipe(dest("dist/js"))
+		.pipe(dest("_dist/js"))
 }
 
 module.exports = jsTask;

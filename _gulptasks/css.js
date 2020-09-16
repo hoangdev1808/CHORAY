@@ -30,7 +30,7 @@ export const sassTask = () => {
 			})
 		]))
 		.pipe(sourcemap.write("."))
-		.pipe(dest("dist/css"))
+		.pipe(dest("_dist/css"))
 };
 
 module.exports = sassTask;

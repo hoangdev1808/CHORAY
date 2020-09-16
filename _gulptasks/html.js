@@ -15,7 +15,7 @@ export const pugTask = () => {
 			pretty: "\t",
 
 		}))
-		.pipe(dest("dist"))
+		.pipe(dest("_dist"))
 };
 
 module.exports = pugTask;

@@ -8,7 +8,7 @@ import {
 
 export const copyImage = () => {
 	return src("./src/assets/**/**.{svg,png,jpg,speg,gif,jpge,PNG,JPGE,JPG,SVG,GIF,SPEG,mp4}")
-		.pipe(dest("dist/assets"))
+		.pipe(dest("_dist/assets"))
 }
 
 export const copyFonts = () => {
@@ -16,14 +16,14 @@ export const copyFonts = () => {
 	return src(glob.font, {
 			allowEmpty: true
 		})
-		.pipe(dest("dist/fonts"));
+		.pipe(dest("_dist/fonts"));
 }
 
 export const copyFavicon = () => {
 	return src("src/favicon.ico", {
 			allowEmpty: true
 		})
-		.pipe(dest("dist"));
+		.pipe(dest("_dist"));
 }
 
 module.exports = {

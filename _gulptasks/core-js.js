@@ -17,7 +17,7 @@ export const jsCore = () => {
 		.pipe(plumber())
 		.pipe(concat("core.min.js"))
 		.pipe(uglify())
-		.pipe(dest("dist/js"))
+		.pipe(dest("_dist/js"))
 };
 
 module.exports = jsCore;

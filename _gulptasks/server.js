@@ -21,7 +21,7 @@ export const server = () => {
 	bSync.init({
 		notify: true,
 		server: {
-			baseDir: "dist",
+			baseDir: "_dist",
 		},
 		port: 8000
 	})
@@ -49,7 +49,7 @@ export const server = () => {
 	], parallel(jsCore, cssCore));
 
 	watch([
-		"dist"
+		"_dist"
 	]).on("change", bSync.reload);
 }
 

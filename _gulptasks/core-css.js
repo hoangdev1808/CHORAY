@@ -29,7 +29,7 @@ export const cssCore = () => {
 				order: "concentric-css",
 			})
 		]))
-		.pipe(dest("dist/css"))
+		.pipe(dest("_dist/css"))
 }
 
 module.exports = cssCore;
