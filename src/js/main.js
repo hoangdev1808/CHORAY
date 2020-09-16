@@ -56,3 +56,33 @@ document.addEventListener('DOMContentLoaded', () => {
     CrMainBanner();
     checkLayoutBanner();
 });
+// Trang tuyển dụng
+jQuery(document).ready(function($) {
+    var alterClass = function() {
+        var ww = document.body.clientWidth;
+        if (ww < 1200) {
+            $('.tuyendung-col').removeClass('pr-0');
+        } else if (ww >= 1200) {
+            $('.tuyendung-col').addClass('pr-0');
+        }
+    };
+    $(window).resize(function() {
+        alterClass();
+    });
+    alterClass();
+});
+
+jQuery(document).ready(function($) {
+    var alterClass = function() {
+        var ww = document.body.clientWidth;
+        if (ww < 1200) {
+            $('.tuyendung-col-2').removeClass('pl-0');
+        } else if (ww >= 1200) {
+            $('.tuyendung-col-2').addClass('pl-0');
+        }
+    };
+    $(window).resize(function() {
+        alterClass();
+    });
+    alterClass();
+});
