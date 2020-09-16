@@ -1,11 +1,11 @@
 extends ../_components/_layout/_layout.pug
 
 block var
-	- let title = 'TRANG CHỦ';
+	- let title = 'Tuyển dụng chi tiết';
 	- let bodyClass = 'index-page';
 	- let titlePosition = ['Trang Chu'];
 block banner,breadcrumb
-	include ../_components/banner/homebanner.pug
 block main
-	
+	include ../_components/_layout/_breadcrumb.pug
+	include ../_components/tuyen-dung-chi-tiet/hr-detail.pug
 block scripts
