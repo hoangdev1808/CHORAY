@@ -39,9 +39,20 @@ section.tuyendung-position
 							td.text-right 30.09.2020
 		.tuyendung-ps-box 
 			.row 
-				.col-md-6.col-12 
-					.tuyendung-section 
-						
+				- for (i=1; i<9; i++)
+					.col-md-6
+						.tuyendung-mobile.p-4 
+							h1.mobile-title Bác sĩ 
+							ul 
+								li Vị trí tuyển dụng:
+									span Bác sĩ
+								li Số lượng:
+									span 02
+								li Địa điểm:
+									span Quận 5, TP.HCM
+								li Hạn nộp:
+									span 30.09.2020
+							button.btn.btn-chitiet Xem chi tiết
 .pages.mb-80
 	.modulepager
 		ul.pagination
