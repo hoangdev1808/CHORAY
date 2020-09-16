@@ -1,7 +1,18 @@
-
-
-section.section
-.pages
+section.pages-tintuc
+	.container
+		.block-title.text-center
+			h2  Tin tức
+		.row 
+			- for (i=1; i<9; i++)
+				.col-xl-3.col-lg-4.col-sm-6.col-12
+					.tintuc-box 
+						.tintuc-img
+							img(src="./assets/images/index/i-1.png", alt="")
+						.tintuc-content 
+							p.section-date Thứ tư, 17/06/2020
+							a(href="")
+								h1.section-title.lcl.lcl-4 Cơ quan Hợp tác Quốc tế Nhật Bản (JICA) thăm và làm việc tại BV Chợ Rẫy
+.pages.mb-80
 	.modulepager
 		ul.pagination
 			li.active
