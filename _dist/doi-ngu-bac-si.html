@@ -84,11 +84,11 @@
 														<div class="label active">
 															<p>khoa lâm sàng</p><span class="material-icons">keyboard_arrow_down</span>
 														</div>
-														<ul class="list-level2">
-															<li>
-																<div class="label active"><span class="material-icons">keyboard_arrow_down</span><a href="">Nhóm khoa hồi sức cấp cứu</a></div>
-																<ul class="list-level3">
-																	<li class="active"><a href="">Khoa Phẫu thuật gây mê hồi sức</a></li>
+														<ul class="list-level2" id="list-child">
+															<li class="has-children">
+																<div class="label active"><span class="material-icons">keyboard_arrow_down</span><a href="javascript:;">Nhóm khoa hồi sức cấp cứu</a></div>
+																<ul class="list-level3" id="list-child">
+																	<li class="active"><a href="javascript:;">Khoa Phẫu thuật gây mê hồi sức</a></li>
 																	<li><a href="">Khoa Hồi sức cấp cứu</a></li>
 																	<li><a href="">Khoa Hồi sức ngoại thần kinh</a></li>
 																	<li><a href="">Khoa Chấn thương sọ não</a></li>
@@ -99,12 +99,12 @@
 													</li>
 													<li class="has-children">
 														<div class="label active">
-															<p>khoa cận vlâm sàng</p><span class="material-icons">keyboard_arrow_down</span>
+															<p>khoa cận lâm sàng</p><span class="material-icons">keyboard_arrow_down</span>
 														</div>
-														<ul class="list-level2">
-															<li>
+														<ul class="list-level2" id="list-child">
+															<li class="has-children">
 																<div class="label active"><span class="material-icons">keyboard_arrow_down</span><a href="">Nhóm khoa hồi sức cấp cứu</a></div>
-																<ul class="list-level3">
+																<ul class="list-level3" id="list-child">
 																	<li class="active"><a href="">Khoa Phẫu thuật gây mê hồi sức</a></li>
 																	<li><a href="">Khoa Hồi sức cấp cứu</a></li>
 																	<li><a href="">Khoa Hồi sức ngoại thần kinh</a></li>
@@ -133,7 +133,9 @@
 										</div>
 									</div>
 									<div class="col-xl-9">
-										<div class="acnav__label">khoa cấp cứu</div>
+										<div class="acnav__label">
+											<h3>Khoa cấp cứu</h3>
+										</div>
 										<div class="item">
 											<figure>
 												<div class="img"><img src="./assets/images/doctor/doctor-1.png" alt=""></div>
@@ -145,7 +147,7 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
 										</div>
@@ -160,7 +162,7 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
 										</div>
@@ -175,7 +177,7 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
 										</div>
@@ -190,7 +192,7 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
 										</div>
@@ -205,7 +207,7 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
 										</div>
@@ -220,9 +222,18 @@
 														<p>Bác sĩ cấp cứu</p>
 														<p>14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1</p>
 													</div>
-													<div class="detail"><a href="">Xem chi tiết</a><a class="btn" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
+													<div class="detail"><a href="">Xem chi tiết<span class="material-icons">arrow_forward</span></a><a class="btn btn__book" href=""><span class="material-icons">event_available</span>đặt lịch</a></div>
 												</figcaption>
 											</figure>
+										</div>
+										<div class="pages">
+											<div class="modulepager">
+												<ul class="pagination">
+													<li class="active"><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>

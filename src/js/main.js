@@ -51,30 +51,6 @@ const checkLayoutBanner = () => {
 
 }
 
-// Menu Left
-function MenuLeft(){
-	$('.acc').find('.acc__panel:first').addClass('show');
-	$('.acc__title').click(function(j) {
-		var dropDown = $(this).closest('.acc__card').find('.acc__panel');
-		$(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
-		if ($(this).hasClass('active')) {
-		$(this).removeClass('active');
-		} else {
-		$(this).closest('.acc').find('.acc__title.active').removeClass('active');
-		$(this).addClass('active');
-		}
-		dropDown.stop(false, true).slideToggle();
-		j.preventDefault();
-	});
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-	toggleMenuMobile();
-	moveNavitem();
-	CrMainBanner();
-	checkLayoutBanner();
-	MenuLeft();
-});
 // Trang tuyển dụng
 jQuery(document).ready(function($) {
     var alterClass = function() {
@@ -104,4 +80,28 @@ jQuery(document).ready(function($) {
         alterClass();
     });
     alterClass();
+});
+
+function MultiLevelAccordiion(){
+    $('.label').click(function () {
+        var label = $(this);
+        var parent = label.parent('.has-children, .list-level2 .has-children');
+        var list = label.siblings('#list-child');
+        if ( parent.hasClass('is-open') ) {
+            list.slideUp('slow');
+            parent.removeClass('is-open');
+        }
+        else {
+            list.slideDown('slow');
+            parent.addClass('is-open');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	toggleMenuMobile();
+	moveNavitem();
+	CrMainBanner();
+	checkLayoutBanner();
+    MultiLevelAccordiion();
 });

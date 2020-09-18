@@ -16,14 +16,14 @@ section.section.cr-doctor
 									.label.active
 										p khoa lâm sàng
 										span.material-icons keyboard_arrow_down
-									ul.list-level2
-										li
+									ul.list-level2#list-child
+										li.has-children
 											.label.active
 												span.material-icons keyboard_arrow_down
-												a(href="") Nhóm khoa hồi sức cấp cứu
-											ul.list-level3
+												a(href="javascript:;") Nhóm khoa hồi sức cấp cứu
+											ul.list-level3#list-child
 												li.active
-													a(href="") Khoa Phẫu thuật gây mê hồi sức
+													a(href="javascript:;") Khoa Phẫu thuật gây mê hồi sức
 													
 												li
 													a(href="") Khoa Hồi sức cấp cứu
@@ -35,14 +35,14 @@ section.section.cr-doctor
 													a(href="") Khoa cấp cứu
 								li.has-children
 									.label.active
-										p khoa cận vlâm sàng
+										p khoa cận lâm sàng
 										span.material-icons keyboard_arrow_down
-									ul.list-level2
-										li
+									ul.list-level2#list-child
+										li.has-children
 											.label.active
 												span.material-icons keyboard_arrow_down
 												a(href="") Nhóm khoa hồi sức cấp cứu
-											ul.list-level3
+											ul.list-level3#list-child
 												li.active
 													a(href="") Khoa Phẫu thuật gây mê hồi sức
 													
@@ -71,7 +71,7 @@ section.section.cr-doctor
 									a(href="") gói a4
 				.col-xl-9
 					.acnav__label
-						| khoa cấp cứu
+						h3 Khoa cấp cứu
 					-for(i=1; i<7; i++)
 						.item
 							figure
@@ -86,9 +86,19 @@ section.section.cr-doctor
 										p 14 năm kinh nghiệm công tác tại bệnh viện Nhi đồng 1
 									.detail
 										a(href="") Xem chi tiết
-										a.btn(href="")
+											span.material-icons arrow_forward
+										a.btn.btn__book(href="")
 											span.material-icons event_available
 											|đặt lịch
+					.pages
+						.modulepager
+							ul.pagination
+								li.active
+									a(href="#") 1
+								li
+									a(href="#") 2
+								li
+									a(href="#") 3
 
 
 
