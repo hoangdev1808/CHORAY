@@ -40,7 +40,7 @@ const checkLayoutBanner = () => {
     const breadcrumb = $('.global-breadcrumb');
     const heightHeader = $('header').outerHeight();
     const mainBanner = $('#home-banner');
-	if (mainBanner.length < 1) {
+	if (mainBanner.length >= 1) {
 		pagesBanner.css('padding-top', heightHeader);
 	}
 	else if(mainBanner.length < 1 && pagesBanner.length < 1){
@@ -74,20 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	CrMainBanner();
 	checkLayoutBanner();
 	MenuLeft();
-    if (mainBanner.length < 1 && $(window).width() >= 1024) {
-        pagesBanner.css('padding-top', heightHeader + 13);
-    } else {
-        mainBanner.css('padding-top', heightHeader + 13);
-    }
-    if (mainBanner.length < 1 && pagesBanner.length < 1) {
-        $('main').css('padding-top', heightHeader);
-    }
-};
-document.addEventListener('DOMContentLoaded', () => {
-    toggleMenuMobile();
-    moveNavitem();
-    CrMainBanner();
-    checkLayoutBanner();
 });
 // Trang tuyển dụng
 jQuery(document).ready(function($) {
