@@ -1,0 +1,54 @@
+section.section.doctor-detail
+	.container
+		.item
+			.row
+				.col-xl-4.col-md-5.left
+					.img
+						img(src="./assets/images/doctor/doctor-1.png", alt="")
+				.col-xl-8.col-md-7.right
+					.content
+						.name
+							a(href="doi-ngu-chi-tiet.html") bs.võ mỹ hương
+							p 24 nhận xét
+						.desc
+							ul
+								li
+									p Bác sĩ Lê Thị Kim Ngân tốt nghiệp bác sĩ chuyên khoa I - Sản Phụ Khoa tại ĐH Y Dược, TP. HCM năm 1999, tốt nghiệp BS. Đa khoa, ĐH Y Dược TPHCM (1996)
+
+								li
+									p Bà là Phó Giám đốc chuyên khoa Sản - Bệnh viện TWG và là thành viên Hội Đồng Y khoa. Nguyên Trưởng khoa Sản Phụ - BV Hoàn Mỹ Sài Gòn từ 2011 đến T6/2019
+
+								li
+									p BS. Ngân có hơn 20 năm kinh nghiệm và từng công tác tại BV. Hoàn Mỹ Sài Gòn và một số bệnh viện lớn khác.
+section.form-block.section
+	.container
+		.wrap-form
+			p Gửi đánh giá bình luận
+			.form-group
+				label(for="") 1. Gửi bình luận, góp ý cho bác sĩ
+				.f-input
+					input(type="text" placeholder="Hài lòng")
+					input(type="text" placeholder="Chưa hài lòng")
+			.form-group
+				label(for="") 2. Gửi bình luận, góp ý cho bệnh viện
+				.f-input
+					textarea(cols="30", rows="10" placeholder="Góp ý")
+			.form-group.frm-btnwrap
+				.frm-btn
+					input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
+					em.material-icons arrow_right_alt
+section.comment-block.section
+	.container
+		.comment-list
+			p Bình luận (200 bình luận)
+			-for(i=1; i<5; i++)
+				.item
+					.item__header
+						p ID: lamchame200
+						span 10 giờ trước
+					.item__content
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+			.view-more
+				a.btn.btn__viewmore(href="") Xem thêm
+					.icon
+						img(src="./assets/icons/doingu_ct.png", alt="")

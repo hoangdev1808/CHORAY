@@ -35,7 +35,7 @@ header
 									p Hotline cấp cứu
 								li
 									a(href="tel:0977.010.200") 0977.010.200
-						a.search.btn.btn__search(data-fancybox data-animation-duration="700" data-src="#searchfancybox" href="javascript:;")
+						a.search#searchbox(href="javascript:;")
 							em.ri-search-2-line
 						.language.dropdown
 							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown')
@@ -43,3 +43,8 @@ header
 							.dropdown-menu
 								a.dropdown-item(href='#') EN
 								a.dropdown-item(href="") VN
+			#search-box
+				.form-group
+					input.form-control(type="text" placeholder="Tìm sản phẩm...")
+					button.searchbutton.btn.btn__search
+						em.material-icons search

@@ -1,0 +1,12 @@
+extends ../_components/_layout/_layout.pug
+
+block var
+	- let title = 'Trung tam';
+	- let bodyClass = 'index-page';
+block banner,breadcrumb
+	
+block main
+	include ../_components/banner/pages-banner.pug
+	include ../_components/_layout/_breadcrumb.pug
+	include ../_components/trung-tam/trung-tam.pug
+block scripts

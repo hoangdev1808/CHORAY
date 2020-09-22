@@ -1,0 +1,24 @@
+section.section.active-general
+	.container
+		.block-title
+			h2 Hoạt động
+		-for(j=1; j<7; j++)
+			.active-list
+				.active-title
+					h3 Hoạt động đối ngoại
+					a.btn.btn__viewmore(href="") Xem thêm
+						.icon
+							img(src="./assets/icons/doingu_ct.png", alt="")
+				.row
+					-for(i=1; i<5; i++)
+						.col-xl-3.col-md-4
+							a(href="")
+								.item
+									figure
+										.img
+											img(src="./assets/images/active/"+i+".png", alt="")
+										figcaption
+											.date 17.06.2020
+											.desc
+												h1 Thư cảm ơn của Tổng Lãnh sự Anh về việc chăm sóc và hỗ trợ các công dân Anh trong phòng chống dịch Covid -19
+
