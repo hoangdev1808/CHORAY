@@ -1,0 +1,410 @@
+.ld-1
+	.block-title
+		text-align: center
+		p 
+			text-align: center
+			font-size: 24px
+			font-family: "Sarabun"
+			color: #111111
+			span 
+				color: #1379d6
+	.number
+		width: 1100px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 48px
+		margin-bottom: 50px
+		ul 
+			display: flex
+			align-items: center
+			justify-content: space-between
+			list-style: none
+			padding-left: 0
+			li 
+				display: flex
+				flex: 1 0 18%
+				flex-direction: column
+				height: 100px
+				text-align: center
+				.counter
+					font-size: 56px
+					font-family: "Sarabun"
+					background-image: linear-gradient( 25deg, #01a8e3 0%, #7fd3f1 100%)
+					text-transform: uppercase
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+					font-weight: bold
+				p 
+					font-size: 16px
+					font-family: "Sarabun"
+					color: rgb(51, 51, 51)
+					line-height: 1.375
+	.item
+		width: 100%
+		figure
+			.img
+				border-width: 1px
+				border-color: rgb(224, 224, 224)
+				border-style: solid
+				background-color: rgb(255, 255, 255)
+				width: 100%
+				height: 265px
+				display: flex
+				align-items: flex-end
+				justify-content: center
+			figcaption
+				width: 100%
+				padding: 24px 0
+				text-align: center
+				background-color: #f5f5f5
+				.desc
+					h3 
+						font-size: 18px
+						font-family: "Sarabun"
+						color: $main-color
+						font-weight: bold
+					p 
+						font-size: 14px
+						font-family: "Sarabun"
+						color: #333333
+	@media screen and ( max-width: 1199px)
+		.block-title
+			margin-bottom: 30px
+		.number
+			width: 100%
+			margin-top: 30px
+			margin-bottom: 30px
+		.item
+			figure
+				figcaption
+					padding: 15px 0
+	@media screen and ( max-width: 991px)
+		.block-title
+			margin-bottom: 15px
+			p 
+				font-size: 16px
+		.number
+			margin-top: 0
+			ul 
+				li 
+					flex: 1 0 33.333%
+		.item
+			margin-bottom: 30px
+	@media screen and ( max-width: 767px)
+		.number
+			ul 
+				li 
+					flex: 1 0 33.333%
+.ld-2
+	padding-top: 0
+	.img
+		width: 100%
+		height: 530px
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.content
+		width: 100%
+		margin-left: -15px
+		padding-left: 60px
+		padding-top: 60px
+		background-color: rgb(241, 251, 255)
+		.desc
+			.block-title
+				text-align: left
+			width: 490px
+			p 
+				font-size: 16px
+				font-family: "Sarabun"
+				color: #333333
+				padding-bottom: 35px
+				&:last-child
+					padding-bottom: 0
+	@media screen and ( max-width: 1366px)
+		.img
+			height: 405px
+		.content
+			padding-top: 30px
+	@media screen and ( max-width: 1024px)
+		.img
+			height: 375px
+		.content
+			padding: 15px
+			.desc
+				width: 100%
+	@media screen and ( max-width: 991px)
+		.img
+			height: 350px
+		.content
+			.desc
+				.block-title
+					margin-bottom: 15px
+				p 
+					padding-bottom: 10px
+					font-size: 15px
+	@media screen and ( max-width: 768px)
+		.left
+			order: 2
+		.img
+			height: 315px
+	@media screen and ( max-width: 767px)
+		.img
+			height: auto
+		.content
+			order: 1
+			margin: 0
+			padding: 15px 30px
+.ld-3
+	padding-top: 0
+	.ld-item
+		.left
+			padding-right: 0
+			.img
+				width: 100%
+				height: 400px
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+					object-position: right
+		.right
+			width: 100%
+			padding-left: 0
+			.content
+				padding-left: 60px
+				padding-right: 40px
+				padding-top: 60px
+				height: 100%
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1)
+				.desc
+					h3 
+						font-size: 18px
+						font-family: "Sarabun"
+						color: #333333
+						line-height: 1.2
+						font-weight: 700
+						margin-bottom: 25px
+					p 
+						font-size: 16px
+						font-family: "Sarabun"
+						color: #333333
+						line-height: 1.5
+						padding-bottom: 10px
+						&:nth-child(2)
+							padding-bottom: 35px
+					.box-btn
+						margin-top: 15px
+						.btn-ld
+							border-width: 1px
+							border-color: #2a86da
+							border-style: solid
+							width: 198px
+							height: 38px
+							border-radius: 0
+							display: flex
+							align-items: center
+							justify-content: center
+							font-size: 14px
+							font-family: "Sarabun"
+							color: #2a86da
+							font-weight: bold
+							transition: .3s
+							&:hover
+								transition: .3s
+								background-color: #1379d6
+								border-color: #1379d6
+								color: #ffffff
+		&:nth-child(2n)
+			.left
+				order: 2
+				padding-left: 0
+				padding-right: 15px
+			.right
+				order: 1
+				padding-right: 0
+				padding-left: 15px
+		@media screen and ( max-width: 991px)
+			.left
+				.img
+					height: 312px
+			.right
+				.content
+					padding: 15px
+					.desc
+						h3 
+							margin-bottom: 10px
+						p 
+							&:nth-child(2)
+								padding-bottom: 10px
+		@media screen and ( max-width: 767px)
+			margin-bottom: 30px
+			.left
+				padding: 0 15px
+			.right
+				padding: 0 15px
+			&:nth-child(2n)
+				.left
+					order: 1
+					padding: 0 15px
+				.right
+					order: 2
+					padding: 0 15px
+			&:last-child
+				margin-bottom: 0
+		@media screen and ( max-width: 375px)
+			.left
+				.img
+					height: 225px
+.ld-4
+	padding-top: 0
+	.question
+		&-card
+			.question-title
+				width: 100%
+				padding: 0 20px
+				min-height: 40px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				background-color: rgb(245, 245, 245)
+				border-bottom: solid 2px #ffffff
+				cursor: pointer
+				p 
+					font-size: 16px
+					font-family: "Sarabun"
+					color: #333333
+
+				.ri-arrow-drop-down-line
+					font-size: 16px
+					color: #404040
+					transform: rotate(0deg)
+					transition: .3s
+				&:hover
+					p 
+						color: $main-color
+					.ri-arrow-drop-down-line
+						color: $main-color
+				&.active
+					p 
+						color: $main-color
+					.ri-arrow-drop-down-line
+						color: $main-color
+						transform: rotate(180deg)
+						transition: .3s
+			.question-body
+				padding: 20px 80px 30px 40px
+				display: none
+		@media screen and ( max-width: 1024px)
+			&-card
+				.question-title
+					p 
+						font-size: 14px
+				.question-body
+					padding: 30px
+		@media screen and ( max-width: 575px)
+			&-card
+				.question-body
+					padding: 15px
+.ld-5
+	padding-top: 0
+	background-image: url('../assets/images/landingpage/ld-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	.content
+		padding-top: 80px
+		.block-title
+			text-align: left
+		.wrap-form
+			.form-group
+				margin-bottom: 20px
+				display: flex
+				input
+					width: 350px
+					background-color: rgb(255, 255, 255)
+					height: 40px
+					border: none
+					padding-left: 15px
+					&:first-child
+						margin-right: 30px
+					&::placeholder
+						font-size: 14px
+						font-family: "Sarabun"
+						color: #999999
+				textarea
+					width: 100%
+					height: 123px
+					padding-left: 15px
+					border: none
+					margin-bottom: 10px
+					&::placeholder
+						font-size: 14px
+						font-family: "Sarabun"
+						color: #999999
+			.frm-btnwrap 
+				width: 100%
+				label 
+					display: none
+
+				.frm-btn 
+					width: 150px
+					display: flex
+					align-items: center
+
+					.frm-btn-submit
+						margin-bottom: 0
+						width: 100%
+						height: 46px
+						text-align: center
+						border-radius: 0
+						padding-left: 0
+						font-size: 16px
+						font-family: "Sarabun"
+						color: rgb(255, 255, 255)
+						font-weight: bold
+						text-transform: uppercase
+						border: none
+						background: #01a8e3
+						transition: all ease-in-out .3s
+
+					.material-icons
+						color: #ffffff
+						font-size: 20px
+						margin-left: -60px
+					&:hover
+						input
+							background-image: linear-gradient( 25deg, #01a8e3 0%, #7fd3f1 100%)
+							transition: all ease-in-out .3s
+		@media screen and ( max-width: 1024px)
+			.wrap-form
+				.form-group
+					input
+						width: 50%
+		@media screen and ( max-width: 575px)
+			.wrap-form
+				.form-group
+					flex-direction: column
+					input
+						width: 100%
+						margin-bottom: 20px
+						&:first-child
+							margin-right: 0
+						&:last-child
+							margin-bottom: 0
+				.frm-btnwrap 
+					.frm-btn 
+						.material-icons
+							margin-left: -30px
+	@media screen and ( max-width: 575px)
+		background-position: right
+		.content
+			padding-top: 30px
+
+
+
+
+
+
+

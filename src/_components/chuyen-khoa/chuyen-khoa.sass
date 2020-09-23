@@ -1,0 +1,55 @@
+.specialist
+	.block-title
+		text-align: center
+	article
+		.nav-wrap
+			margin: 0
+		.specialist-title
+			padding-bottom: 15px
+			margin-bottom: 30px
+			border-bottom: solid 1px #e0e0e0
+			h3 
+				font-size: 24px
+				font-family: "Sarabun"
+				color: #111111
+				font-weight: bold
+				line-height: 24px
+		.specialist-items
+			.item
+				border-radius: 10px
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
+				width: 210px
+				height: 100px
+				padding: 20px
+				padding-right: 41px
+				margin-bottom: 20px
+				transition: .3s
+				span 
+					font-size: 16px
+					font-family: "Sarabun"
+					color: #999999
+					line-height: 1.2
+				p 
+					font-size: 14px
+					font-family: "Sarabun"
+					color: #333333
+					font-weight: bold
+					line-height: 1.2
+				&:hover
+					background-color: $main-color
+					span,
+					p 
+						color: #ffffff
+					transition: .3s
+		@media screen and ( max-width: 1199px)
+			.nav-wrap
+				margin-bottom: 30px
+		@media screen and ( max-width: 1024px)
+			.specialist-items
+				.item
+					width: 100%
+
+
+
+

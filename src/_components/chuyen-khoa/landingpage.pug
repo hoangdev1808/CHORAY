@@ -1,0 +1,109 @@
+section.section.ld-1
+	.container
+		.block-title
+			h2 Khoa tai mũi họng
+			p Tổng số viên chức và người lao động tại khoa Tai mũi họng là 
+				span 21 cán bộ, 
+			p trong đó
+		.number
+			ul.row.no-gutters
+				li.col
+					p.counter(data-count="21") 21
+					p Cán bộ
+				li.col
+					p.counter(data-count="03") 03
+					p Bác sĩ CK II
+				li.col
+					p.counter(data-count="05") 05
+					p Bác sĩ CK I
+				li.col
+					p.counter(data-count="02") 02
+					p Cử nhân điều dưỡng
+				li.col
+					p.counter(data-count="09") 09
+					p Điều dưỡng trung cấp
+		.row
+			-for(i=1; i<5; i++)
+				.col-xl-3.col-lg-3.col-md-6
+					.item
+						figure
+							.img
+								img(src="./assets/images/landingpage/ld-"+i+".png", alt="")
+							figcaption
+								.desc
+									h3 Vũ Hải Long
+									p Trưởng khoa: Bs - CKII
+section.section.ld-2
+	.container-fluid.p-0
+		.row
+			.col-xl-6.col-lg-6.col-md-6.left
+				.img
+					img(src="./assets/images/landingpage/ld-5.png", alt="")
+			.col-xl-6.col-lg-6.col-md-6.content
+				.desc
+					.block-title.blue
+						h2 Giới thiệu
+					p Khoa tai mũi họng bệnh viện Chợ Rẫy, đây là một trong những bệnh viện có bề dày lịch sử và chuyên môn khá cao trên địa bàn TPHCM và cả khu vực phía nam.
+
+					p Bệnh viện hội tụ đội ngũ giáo sư chuyên gia uy tín, nhiều kinh nghiệm, thiết bị máy móc hiện đại tiên tiến.
+
+					p Khoa Tai mũi họng với đội ngũ thầy thuốc có trình độ chuyên môn giỏi, giàu kinh nghiệm, nhiệt tình và tận tâm, phối hợp chặt chẽ với các chuyên khoa khác trong và ngoài bệnh viện để thực hiện điều trị toàn diện và triệt để.
+section.section.ld-3
+	.container
+		.block-title.blue
+			h2 Bệnh lý điều trị tại khoa
+		-for(i=6; i<9; i++)
+			.ld-item
+				.row
+					.col-xl-6.col-md-6.left
+						.img
+							img(src="./assets/images/landingpage/ld-"+i+".png", alt="")
+					.col-xl-6.col-md-6.right
+						.content
+							.desc
+								h3 Các bệnh lý về tai
+								p Đau tai: triệu chứng phổ biến nhất.
+								p Chảy mủ tai: thường gặp trong trường hợp viêm tai giữa cấp tính hoặc viêm tai giữa mạn tính trong giai đoạn vỡ mủ.
+								p Ù tai: có thể là triệu chứng của các bệnh lý màng nhĩ như xơ hóa màng nhĩ hoặc do các bệnh lý ngoài tai.
+								.box-btn
+									a.btn.btn-ld(href="")
+										em.ri-quill-pen-line
+										span Đăng ký tư vấn
+
+section.section.ld-4
+	.container
+		.block-title.blue
+			h2 Câu hỏi thường gặp
+		article.question
+			-for(i=1; i<6; i++)
+				.question-card
+					.question-title
+						p Nội soi tai mũi họng là gì? Khi nào nên thực hiện nội soi tai mũi họng?
+						em.ri-arrow-drop-down-line
+					.question-body
+						p Lệt kê ra những khó chịu mà hiện tại bạn đang có. Bạn mô tả càng chi tiết càng tốt. Ví dụ như: Khó chịu ở vị trí nào? Thường bị lúc nào? Bị bao lâu rồi? Nó xuất hiện đột ngột hay do điều gì đó gây nên?…
+
+						p Liệt kê ra các bệnh lý khác mà bạn đang điều trị, tên các thuốc điều trị, thuốc bổ hoặc các thực phẩm chức năng đang dùng. Chú ý nếu bạn có dị ứng với một loại thuốc nào đó, cần cho bác sĩ biết tên cụ thể của loại thuốc đó. 
+
+						p Nếu đã từng đi khám trước đây, cần nhớ đem theo những giấy tờ của lần trước như: toa thuốc, kết quả nội soi, X-quang… Nhớ đem theo bảo hiểm y tế của bạn nữa nhé!
+section.section.ld-5
+	.container
+		.content 
+			.block-title.blue
+				h2 Đăng ký tư vấn
+			.row
+				.col-xl-7
+					.wrap-form
+						.form-group
+							input(type="text" placeholder="Họ tên")
+							input(type="text" placeholder="Số điện thoại")
+						.form-group
+							textarea(cols="30", rows="10" placeholder="Nội dung")
+						.form-group.frm-btnwrap
+							.frm-btn
+								input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Đăng ký')
+								em.material-icons arrow_right_alt
+
+
+
+

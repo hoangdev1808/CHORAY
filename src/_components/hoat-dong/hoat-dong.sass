@@ -13,9 +13,16 @@
 				font-family: "Sarabun"
 				color: rgb(1, 168, 227)
 				font-weight: bold
-
+				line-height: 1
+				@media screen and ( max-width: 375px)
+					font-size: 20px
+					line-height: 2
 			.btn__viewmore
 				border-bottom: none
+				@media screen and ( max-width: 375px)
+					width: 120px
+					.icon
+						right: 5px
 		.item
 			figure
 				.img
@@ -56,5 +63,31 @@
 							h1
 								color: $main-color
 								transition: all ease-in-out .3s
-
-
+			@media screen and ( max-width: 1199px)
+				figure
+					.img
+						width: 100%
+						height: 140px
+					figcaption
+						.desc
+							-webkit-line-clamp: 3
+			@media screen and ( max-width: 991px)
+				margin-bottom: 30px
+			@media screen and ( max-width: 600px)
+				figure
+					.img
+						width: 100%
+						height: 270px
+			@media screen and ( max-width: 375px)
+				figure
+					.img
+						width: 100%
+						height: 235px
+		.row
+			@media screen and ( max-width: 375px)
+				.col-xl-3
+					&:last-child
+						.item
+							margin-bottom: 0
+		@media screen and ( max-width: 375px)
+			padding-bottom: 30px

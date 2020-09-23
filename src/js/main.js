@@ -118,6 +118,22 @@ function Accordiion() {
         });
     }
 }
+
+function Faqs() {
+    $('.question-title').click(function (x) {
+        var dropDown = $(this).closest('.question-card').find('.question-body');
+        $(this).closest('.question-card').find('.question-body').not(dropDown).slideUp();
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.question-card').find('.question-title.active').removeClass('active');
+            $(this).addClass('active');
+        }
+        dropDown.stop(false, true).slideToggle();
+        x.preventDefault();
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
     moveNavitem();
@@ -126,4 +142,5 @@ document.addEventListener('DOMContentLoaded', () => {
     MultiLevelAccordiion();
     searchbox();
     Accordiion();
+    Faqs();
 });

@@ -1,0 +1,154 @@
+.active-inner
+	.block-title
+		text-align: center
+	.big-img
+		margin-bottom: 55px
+		.item
+			figure
+				.img
+					width: 100%
+					height: 405px
+					overflow: hidden
+					img 
+						width: 100%
+						height: 100%
+						object-fit: cover
+						transform: scale(1)
+						transition: all ease-in-out .3s
+
+				figcaption
+					margin-top: 10px
+					.date
+						font-size: 13px
+						font-family: "Sarabun"
+						color: rgb(153, 153, 153)
+					.desc
+						margin-top: 10px
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 4
+						-webkit-box-orient: vertical
+						h1
+							font-size: 24px
+							font-family: "Sarabun"
+							color: #333333
+							font-weight: bold
+							line-height: 1.25
+
+			&:hover
+				figure
+					.img
+						img 
+							transform: scale(1.1)
+					figcaption
+						.desc
+							h1
+								color: $main-color
+								transition: all ease-in-out .3s
+		@media screen and ( max-width: 1199px)
+			margin-bottom: 30px
+			.item
+				figure
+					.img
+						width: 100%
+						height: 335px
+					figcaption
+						.desc
+							h1 
+								font-size: 18px
+		@media screen and ( max-width: 991px)
+			.item
+				figure
+					.img
+						height: 225px
+					figcaption
+						.desc
+							h1 
+								font-size: 16px
+		@media screen and ( max-width: 767px)
+			.row
+				.col-xl-6
+					&:first-child
+						.item
+							margin-bottom: 30px
+			.item
+				figure
+					.img
+						height: 345px
+		@media screen and ( max-width: 575px)
+			.item
+				figure
+					.img
+						height: 225px
+	.small-img
+		.item
+			margin-bottom: 30px
+			figure
+				.img
+					width: 285px
+					height: 192px
+					overflow: hidden
+					img 
+						width: 100%
+						height: 100%
+						object-fit: cover
+						transform: scale(1)
+						transition: all ease-in-out .3s
+
+				figcaption
+					margin-top: 10px
+					.date
+						font-size: 13px
+						font-family: "Sarabun"
+						color: rgb(153, 153, 153)
+					.desc
+						margin-top: 10px
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 4
+						-webkit-box-orient: vertical
+						h1
+							font-size: 18px
+							font-family: "Sarabun"
+							color: #111111
+							font-weight: 500
+			&:hover
+				figure
+					.img
+						img 
+							transform: scale(1.1)
+					figcaption
+						.desc
+							h1
+								color: $main-color
+								transition: all ease-in-out .3s
+			@media screen and ( max-width: 1199px)
+				figure
+					.img
+						width: 100%
+						height: 140px
+					figcaption
+						.desc
+							-webkit-line-clamp: 3
+							h1 
+								font-size: 16px
+			@media screen and ( max-width: 991px)
+				margin-bottom: 30px
+			@media screen and ( max-width: 600px)
+				figure
+					.img
+						width: 100%
+						height: 160px
+			@media screen and ( max-width: 375px)
+				figure
+					.img
+						width: 100%
+						height: 235px
+		.row
+			@media screen and ( max-width: 375px)
+				.col-xl-3
+					&:last-child
+						.item
+							margin-bottom: 0
