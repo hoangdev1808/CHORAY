@@ -38,21 +38,32 @@
                     <xsl:attribute name="class">
                         <xsl:text>nav-item dropdown</xsl:text>
                     </xsl:attribute>
+                    <a class="nav-link">
+                        <xsl:attribute name="href">
+                            <xsl:text disable-output-escaping="yes">javascript:;</xsl:text>
+                        </xsl:attribute>
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="Title"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </a>
                 </xsl:if>
                 <xsl:if test="ZoneId=85">
                     <xsl:attribute name="class">
                         <xsl:text>nav-item dropdown</xsl:text>
                     </xsl:attribute>
                 </xsl:if>
-                <a class="nav-link">
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="Url"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="title">
+                <xsl:if test="ZoneId!=84">
+                    <a class="nav-link">
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="Url"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="Title"></xsl:value-of>
+                        </xsl:attribute>
                         <xsl:value-of select="Title"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:value-of select="Title"></xsl:value-of>
-                </a>
+                    </a>
+                </xsl:if>
                 <xsl:if test="count(Zone)>0">
                     <xsl:choose>
                         <xsl:when test="ZoneId=84">
@@ -78,7 +89,7 @@
                 </xsl:attribute>
                 <a class="nav-link">
                     <xsl:attribute name="href">
-                        <xsl:value-of select="Url"></xsl:value-of>
+                        <xsl:text disable-output-escaping="yes">javascript:;</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>

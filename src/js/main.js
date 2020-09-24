@@ -58,16 +58,15 @@ function CrMainBanner() {
 //Check banner
 const checkLayoutBanner = () => {
     const pagesBanner = $('#page-banner');
-    const breadcrumb = $('.global-breadcrumb');
     const heightHeader = $('header').outerHeight();
     const mainBanner = $('#home-banner');
     if (mainBanner.length >= 1) {
-        pagesBanner.css('padding-top', heightHeader);
-    } else if (mainBanner.length < 1 && pagesBanner.length < 1) {
-        breadcrumb.css('padding-top', heightHeader);
-    } else {
-        mainBanner.css('padding-top', heightHeader);
-    }
+        $('main').css('padding-top', heightHeader)
+    }else if(pagesBanner.length >= 1){
+        $('main').css('padding-top', heightHeader)
+    }else {
+		$('main').css('padding-top', heightHeader);
+	}
 
 }
 

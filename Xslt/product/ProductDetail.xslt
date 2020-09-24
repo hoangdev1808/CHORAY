@@ -10,27 +10,32 @@
                     <div class="row">
                         <div class="col-xl-4 col-md-5 left">
                             <div class="img">
-                                <img src="./assets/images/doctor/doctor-1.png" alt=""/>
+                                <img >
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="/ProductDetail/ProductImages/ImageUrl"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="alt">
+                                        <xsl:value-of select="/ProductDetail/ProductImages/Title"></xsl:value-of>
+                                    </xsl:attribute>
+                                </img>
                             </div>
                         </div>
                         <div class="col-xl-8 col-md-7 right">
                             <div class="content">
                                 <div class="name">
-                                    <a href="doi-ngu-chi-tiet.html">bs.võ mỹ hương</a>
+                                    <a>
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="Url"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="title">
+                                            <xsl:value-of select="Title"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:value-of select="/ProductDetail/Title"></xsl:value-of>
+                                    </a>
                                     <p>24 nhận xét</p>
                                 </div>
                                 <div class="desc">
-                                    <ul>
-                                        <li>
-                                            <p>Bác sĩ Lê Thị Kim Ngân tốt nghiệp bác sĩ chuyên khoa I - Sản Phụ Khoa tại ĐH Y Dược, TP. HCM năm 1999, tốt nghiệp BS. Đa khoa, ĐH Y Dược TPHCM (1996)</p>
-                                        </li>
-                                        <li>
-                                            <p>Bà là Phó Giám đốc chuyên khoa Sản - Bệnh viện TWG và là thành viên Hội Đồng Y khoa. Nguyên Trưởng khoa Sản Phụ - BV Hoàn Mỹ Sài Gòn từ 2011 đến T6/2019</p>
-                                        </li>
-                                        <li>
-                                            <p>BS. Ngân có hơn 20 năm kinh nghiệm và từng công tác tại BV. Hoàn Mỹ Sài Gòn và một số bệnh viện lớn khác.</p>
-                                        </li>
-                                    </ul>
+                                    <xsl:value-of select="/ProductDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
                                 </div>
                             </div>
                         </div>
@@ -108,6 +113,7 @@
                         <a class="btn btn__viewmore" href="">Xem thêm
 										
                                         
+                            
                             <div class="icon">
                                 <img src="./assets/icons/doingu_ct.png" alt=""/>
                             </div>
