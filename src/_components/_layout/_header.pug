@@ -4,6 +4,9 @@ header
 			.logo
 				a(href="index.html")
 					img(src="./assets/logo.png", alt="")
+			.logo-scroll
+				a(href="index.html")
+					img(src="./assets/logo-scroll.png", alt="")
 			.nav-mobile
 			.toggle-menu
 			.main-nav
@@ -16,10 +19,12 @@ header
 					li.nav-item
 						a.nav-link(href="chuyen-khoa.html") Chuyên khoa
 					li.nav-item.dropdown
-						a.nav-link(href="") Tin tức
+						a.nav-link(href="javascript:;") Tin tức
+							em.ri-arrow-down-s-line
 						ul.dropdown-menu
 							li.dropdown-item.dropdown
-								a.nav-link(href="tin-tuc.html") Tin tức
+								a.nav-link(href="javascript:;") Tin tức
+									em.ri-arrow-down-s-line
 								ul.sup-menu
 									li.sup-item
 										a.nav-link(href="") Tin nổi bật
@@ -31,10 +36,11 @@ header
 										a.nav-link(href="") Video
 									li.sup-item
 										a.nav-link(href="") Thông báo
-								li.dropdown-item
-									a.nav-link(href="tuyen-dung.html") Tuyển dụng
+							li.dropdown-item
+								a.nav-link(href="tuyen-dung.html") Tuyển dụng
 					li.nav-item.dropdown
 						a.nav-link(href="hoat-dong.html") Hoạt động
+							em.ri-arrow-down-s-line
 						ul.dropdown-menu
 							li.dropdown-item
 								a.nav-link(href="hoat-dong-danh-sach.html") Hoạt động đối ngoại
@@ -66,7 +72,7 @@ header
 									a(href="tel:0977.010.200") 0977.010.200
 						a.search#searchbox(href="javascript:;")
 							em.ri-search-2-line
-						.language.dropdown
+						.language
 							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown')
 								a(href="") VN
 							.dropdown-menu

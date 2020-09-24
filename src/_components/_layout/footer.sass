@@ -29,7 +29,7 @@ footer
             border-left: solid 1px rgba(255, 255, 255, 0.1)
             border-bottom: solid 1px rgba(255, 255, 255, 0.1)
             &.pr-40
-                padding-right: 40px
+                padding-right: 39px
             .card__title
                 padding-bottom: 25px
                 h2
@@ -54,7 +54,8 @@ footer
                         display: flex
                         align-items: flex-start
                         span
-                            i
+                            i,
+                            em
                                 font-size: 12px
                                 font-family: "remixicon"
                                 color: rgb(212, 224, 235)
@@ -97,8 +98,11 @@ footer
                 font-size: 12px
                 font-family: "Sarabun"
                 color: rgba(255, 255, 255, 0.749)
+                &:hover
+                    color: rgb(255, 255, 255)
                 @media screen and ( max-width:  1024px)
                     font-size: 11px
+                
             ul
                 display: flex
                 list-style: none
@@ -106,6 +110,7 @@ footer
                 li
                     position: relative
                     padding-right: 8px
+                    cursor: pointer
                     &:last-child
                         padding-right: 0
                         padding-left: 8px
@@ -127,10 +132,14 @@ footer
                             padding: 0
                             border: none
                         a
+                            cursor: pointer
                             width: 100%
                             text-align: center
                             padding: 10px 0
-                            i
+                            &:hover
+                                color: rgb(255, 255, 255)
+                            i,
+                            em
                                 font-size: 18px
                                 color: rgb(255, 255, 255)
                                 text-align: center

@@ -2,10 +2,31 @@ const toggleMenuMobile = () => {
     $('.toggle-menu').on('click', function () {
         $(this).toggleClass('active');
         $(this).siblings('.main-nav').toggleClass('active');
-        $('body').toggleClass('disabled');
+        $('body').toggleClass('disabled')
+        $('#overlay').toggleClass('active');
     });
-};
+    $('#overlay').on('click', function () {
+        $(this).removeClass('active');
+        $('body').removeClass('disabled')
+        $('.main-nav').removeClass('active');
+        $('.toggle-menu').removeClass('active');
+    })
 
+};
+//Header when scroll
+const activeHeaderWhenScroll = () => {
+	window.addEventListener("scroll", function() {
+		if (window.pageYOffset > 0 && $(window).width() >= 1024) {
+			document.querySelector("header").classList.add("header-scoll");
+            $('header').find('.logo').addClass('active');
+            $('header').find('.logo-scroll').addClass('active');
+		} else {
+			document.querySelector("header").classList.remove("header-scoll");
+            $('header').find('.logo').removeClass('active');
+            $('header').find('.logo-scroll').removeClass('active')
+		}
+	});
+}
 function moveNavitem() {
     if ($(window).width() <= 1024) {
         $('.icon > #desktop').appendTo('nav .nav-mobile');
@@ -134,8 +155,22 @@ function Faqs() {
     });
 }
 
+function activeMobileMenu() {
+    if ($(window).width() <= 1024) {
+        $('.nav-item.dropdown').on('click', function(e) {
+            e.stopPropagation();
+            $(e.currentTarget).children('.dropdown-menu').slideToggle();
+        });
+        $('.dropdown-item.dropdown').on('click', function(j) {
+            j.stopPropagation();
+            $(j.currentTarget).children('.sup-menu').slideToggle();
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
+    activeHeaderWhenScroll();
     moveNavitem();
     CrMainBanner();
     checkLayoutBanner();
@@ -143,4 +178,5 @@ document.addEventListener('DOMContentLoaded', () => {
     searchbox();
     Accordiion();
     Faqs();
+    activeMobileMenu();
 });

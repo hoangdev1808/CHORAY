@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+
+	<head id="Head1" runat="server">
+		<title></title>
+		<portal:MetaContent ID="MetaContent" runat="server" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
+		<portal:Favicon ID="Favicon1" runat="server" />
+		<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
+		<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	</head>
+
+	<body id="Body" runat="server" class="canhcam">
+		<portal:FacebookSdk ID="fbsdk" runat="server" />
+		<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+		<form id="frmMain" runat="server">
+			<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+			<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+			<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+			<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+			<div id="wrapper">
+                <header>
+					<div class="container">
+						<nav>
+							<div class="logo">
+                                <portal:modulewrapper id="mdl138" runat="server" configuremoduleid="138" />
+                            </div>
+							<div class="logo-scroll">
+                                <portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
+                            </div>
+							<div class="nav-mobile"></div>
+							<div class="toggle-menu"></div>
+							<div class="main-nav">
+									<portal:modulewrapper id="mdl143" runat="server" configuremoduleid="143" />
+								<div class="icon">
+									<div id="desktop">
+										<div class="hotline"><a class="icon" href="tel:0977.010.200"><em class="ri-phone-line"></em></a>
+											<ul>
+												<li>
+													<p>Hotline cấp cứu</p>
+												</li>
+												<li><a href="tel:0977.010.200">0977.010.200</a></li>
+											</ul>
+										</div><a class="search" id="searchbox" href="javascript:;"><em class="ri-search-2-line"></em></a>
+										<div class="language">
+											<button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown"><a href="">VN</a></button>
+											<div class="dropdown-menu"><a class="dropdown-item" href="#">EN</a><a class="dropdown-item" href="">VN</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="search-box">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Tìm sản phẩm...">
+									<button class="searchbutton btn btn__search"><em class="material-icons">search</em></button>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</header>
+				<main>
+					<asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+						<asp:ContentPlaceHolder ID="altContent1" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="leftContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="mainContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="rightContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+						<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
+					</asp:Panel>
+				</main>
+				<footer>
+					<div class="footer-block">
+						<div class="container">
+							<div class="row">
+								<div class="block-title col-xl-12">
+									<h1>bệnh viện chợ rẫy</h1>
+								</div>
+								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card pr-40">
+									<portal:modulewrapper id="mdl140" runat="server" configuremoduleid="140" />
+								</div>
+								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+									<div class="card__title">
+										<h2>giới thiệu</h2>
+									</div>
+									<div class="card__body">
+										<ul>
+											<li><a href="">Tổng quan</a></li>
+											<li><a href="">Lịch sử hình thành</a></li>
+											<li><a href="">Dịnh hướng phát triển</a></li>
+											<li><a href="">Cơ cấu tổ chức</a></li>
+											<li><a href="">Hệ thống văn bản</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+									<div class="card__title">
+										<h2>các trung tâm</h2>
+									</div>
+									<div class="card__body">
+										<ul>
+											<li><a href="">Trung tâm khu vực về thông tin thuốc và theo dõi phản ứng có hại của thuốc</a></li>
+											<li><a href="">Trung tâm truyền máu khu vực phía Nam</a></li>
+											<li><a href="">Trung tâm Tim mạch Chợ Rẫy</a></li>
+											<li><a href="">Trung tâm Ung bứu Chợ Rẫy</a></li>
+											<li><a href="">Trung tâm Đào tạo – Chỉ đạo tuyến</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+									<div class="card__title">
+										<h2>hỗ trợ khách hàng</h2>
+									</div>
+									<div class="card__body">
+										<ul>
+											<li><a href="">Bảng giá dịch vụ</a></li>
+											<li><a href="">Đặt lịch hẹn bác sĩ</a></li>
+											<li><a href="">Đặt mua gói khám sức khỏe</a></li>
+											<li><a href="">Những câu hỏi thường gặp</a></li>
+											<li><a href="">Chính sách bảo mật</a></li>
+											<li><a href="">Tiếp nhận ý kiến khách hàng</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="copyright">
+						<div class="container">
+							
+								<portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
+							
+						</div>
+					</div>
+				</footer>
+                
+			</div>
+			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav>
+							<ul class="nav navbar-nav listmenu">
+								<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
+								<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
+								<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
+								<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+								<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
+								<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+								<li>
+									<div class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Mode</label>
+										</div>
+										<div class="form-group">
+											<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+											</asp:ContentPlaceHolder>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="nav">
+								<li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<script type="text/javascript">
+                    $(document).ready(function() {
+                        $("#pullmenucms").click(function(e) {
+                            e.preventDefault();
+                            if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
+                                ShowToolbar();
+                                Set_Cookie('toolbarOpenState', 'open');
+                            } else {
+                                HideToolbar();
+                                Set_Cookie('toolbarOpenState', 'closed');
+                            }
+                        });
+                        var openState = Get_Cookie('toolbarOpenState');
+                        if (openState != null) {
+                            if (openState == 'closed') {
+                                HideToolbar();
+                            }
+                            if (openState == 'open') {
+                                ShowToolbar();
+                            }
+                        }
+                    });
+
+                    function HideToolbar() {
+                        $('.cmsadminpanel').addClass("toggled");
+                        $('.fa-chevron-circle-right').addClass('fa-rotate-180');
+                    }
+
+                    function ShowToolbar() {
+                        $('.cmsadminpanel').removeClass("toggled");
+                        $('.fa-chevron-circle-right').removeClass('fa-rotate-180');
+                    }
+				</script>
+			</portal:AutoHidePanel>
+			<portal:Woopra ID="woopra11" runat="server" />
+            <div id="overlay"></div>
+		</form>
+		<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
+		<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	</body>
+
+</html>
