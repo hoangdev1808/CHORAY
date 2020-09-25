@@ -4,7 +4,7 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
-        <div class="swiper-container home-banner">
+        <div class="swiper-container Cr-banner__slide">
             <div class="swiper-wrapper">
                 <xsl:apply-templates select="/BannerList/Banner" mode="Slider"></xsl:apply-templates>
             </div>

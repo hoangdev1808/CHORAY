@@ -1,0 +1,524 @@
+.about-1
+	background-image: url('../assets/images/gio-thieu/a-1.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: left
+	.block-title
+		margin-bottom: 23px
+		h2 
+			color: #ffffff
+	.content
+		.desc
+			max-height: 292px
+			overflow-y: auto
+			padding-right: 20px
+			p 
+				padding-bottom: 30px
+				font-size: 14px
+				
+				color: rgb(255, 255, 255)
+
+			&::-webkit-scrollbar-track 
+				box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0)
+				background-color: #d5d5d5
+
+			&::-webkit-scrollbar 
+				width           : 5px
+				height          : 5px
+				background-color: #006aa7
+
+			&::-webkit-scrollbar-thumb 
+				border-radius   : 2.5px
+				box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0)
+				background-color: #006aa7
+	@media screen and ( max-width: 767px)
+		background-position: right
+		.content
+			.desc
+				p 
+					padding-bottom: 10px
+.about-2
+	.block-title
+		text-align: center
+		margin-bottom: 50px
+		h2 
+			color: #111111
+			margin-bottom: 23px
+		p 
+			font-size: 24px
+			
+			color: rgb(17, 17, 17)
+			line-height: 1.25
+			text-align: center
+	.row
+		.col-xl-4
+			&:nth-child(1),
+			&:nth-child(3)
+				padding-top: 62px
+	.item
+		.item-title
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+			em 
+				padding-right: 20px
+				font-size: 24px
+				font-family: "remixicon"
+				color: rgb(1, 168, 227)
+			p 
+				font-size: 24px
+				
+				color: #111111
+				font-weight: bold
+		.desc
+			p 
+				font-size: 16px
+				
+				color: #333333
+				line-height: 1.5
+		.img
+			width: 100%
+			height: 590px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+	@media screen and ( max-width: 1280px)
+		.item
+			.img
+				height: 562px
+	@media screen and ( max-width: 1200px)
+		.item
+			.img
+				height: 545px
+	@media screen and ( max-width: 1199px)
+		.block-title
+			margin-bottom: 0
+		.row
+			.col-xl-4
+				&:nth-child(1),
+				&:nth-child(3)
+					padding-top: 0
+		.item
+			margin-top: 30px
+			.item-title
+				margin-bottom: 10px
+			.img
+				height: auto
+	@media screen and ( max-width: 767px)
+		.block-title
+			h2 
+				margin-bottom: 10px
+			p 
+				font-size: 18px
+		.row
+			.col-xl-4
+				&:nth-child(2)
+					display: none
+		.item
+			margin-top: 20px
+.about-3
+	background-color: #f5f5f5
+	.block-title
+		text-align: center
+	.history-slide
+		position: relative
+		.slide-block
+			margin: 0 auto
+			width: 1020px
+			@media screen and ( max-width: 1024px)
+				width: 100%
+			&:before
+				position: absolute
+				width: 100%
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				height: 1px
+				background-color: #d3d3d3
+				content: ''
+			.swiper-slide
+				width: 160px
+			.item
+				min-height: 150px
+				position: relative
+				.time
+					margin-bottom: 60px
+					span 
+						font-size: 24px
+						
+						color: rgb(153, 153, 153)
+						font-weight: bold
+				.box-content
+					p 
+						font-size: 16px
+						
+						color: rgb(51, 51, 51)
+						line-height: 1.2
+
+				&::before
+					transition: .3s
+					position: absolute
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+					content: url('../assets/icons/dot.png')
+			.swiper-slide-active
+				.item
+					position: relative
+					.time
+						span 
+							color: #01a8e3
+					&::before
+						transition: .3s
+						position: absolute
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+						content: url('../assets/icons/dot-active.png')
+		.swiper-button-next,
+		.swiper-button-prev
+			top: 35%
+			background-image: none
+		.swiper-button-next
+			right: -35px
+			&::before
+				content: '\EA6E'
+				font-family: remixicon
+				font-size: 30px
+				color: #333333
+		.swiper-button-prev
+			left: -35px
+			&::before
+				font-family: remixicon
+				content: '\EA64'
+				font-size: 30px
+				color: #333333
+.about-4
+	.block-title
+		margin-bottom: 60px
+	.item
+		margin-right: 100px
+		.item-title
+			margin-bottom: 25px
+			p 
+				font-size: 24px
+				
+				color: rgb(1, 168, 227)
+				font-weight: bold
+		.desc
+			p 
+				font-size: 16px
+				
+				color: #333333
+	.img
+		width: 390px
+		height: 390px
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	@media screen and ( max-width: 1240px)
+		.block-title
+			margin-bottom: 30px
+		.item
+			margin-right: 50px
+			.item-title
+				margin-bottom: 15px
+		.img
+			width: 100%
+	@media screen and ( max-width: 1199px)
+		.block-title
+			margin-bottom: 15px
+		.item
+			margin-right: 0
+			margin-bottom: 30px
+			.item-title
+				margin-bottom: 10px
+		.img
+			width: 100%
+	@media screen and ( max-width: 575px)
+		.item
+			margin-bottom: 20px
+		.img
+			height: auto
+.about-5
+	.block-title
+		text-align: center
+	.list-item
+		width: 1020px
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.item
+			figure
+				.img
+					border-width: 1px
+					border-color: rgb(1, 168, 227)
+					border-style: solid
+					border-radius: 50%
+					background-color: rgb(255, 255, 255)
+					width: 138px
+					height: 138px
+					text-align: center
+					line-height: 138px
+					margin-bottom: 30px
+				figcaption
+					p 
+						font-size: 24px
+						
+						color: rgb(17, 17, 17)
+						text-transform: uppercase
+						line-height: 1
+						text-align: center
+		@media screen and ( max-width: 1199px)
+			width: 100%
+		@media screen and ( max-width: 767px)
+			flex-wrap: wrap
+			.item
+				margin-bottom: 30px
+.about-6
+	background-image: url('../assets/images/gio-thieu/a-20.png')
+	background-size: cover
+	background-position: right
+	.block-title
+		text-align: center
+	.item
+		margin: 0 auto
+		figure
+			text-align: center
+			.img
+				text-align: center
+				border-radius: 50%
+				width: 180px
+				height: 180px
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+			figcaption
+				.desc
+					margin-top: 20px
+					h3 
+						font-size: 18px
+						
+						color: #111111
+						font-weight: bold
+					h4
+						font-size: 18px
+						
+						color: #111111
+					p 
+						font-size: 18px
+						
+						color: #01a8e3
+						font-weight: bold
+
+	.bottom
+		width: 1020px
+		margin: 0 auto
+		margin-top: 70px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		@media screen and ( max-width: 1199px)
+			width: 100%
+		@media screen and ( max-width: 767px)
+			margin-top: 20px
+			.item
+				margin-bottom: 20px
+.about-7
+	.block-title
+		text-align: center
+		h2
+			margin-bottom: 20px
+		p 
+			font-size: 16px
+			
+			color: rgb(51, 51, 51)
+			line-height: 1.5
+			text-align: center
+	.top,
+	.bottom
+		.item
+			border-width: 1px
+			border-color: rgb(224, 224, 224)
+			border-style: solid
+			border-radius: 10px
+			background-color: rgb(255, 255, 255)
+			width: 260px
+			height: 260px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			h3 
+				font-size: 16px
+				
+				color: rgb(17, 17, 17)
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 30px
+
+			p 
+				font-size: 36px
+				
+				color: rgb(1, 168, 227)
+				font-weight: bold
+				line-height: 1.2
+				span 
+					font-size: 16px
+					
+					color: rgb(51, 51, 51)
+					line-height: 1.2
+					font-weight: 400
+		@media screen and ( max-width: 1199px)
+			.item
+				width: 100%
+				height: 210px
+				p 
+					font-size: 26px
+		@media screen and ( max-width: 991px)
+			.item
+				margin-bottom: 30px
+			
+	.bottom
+		margin-top: 60px
+		@media screen and ( max-width: 991px)
+			margin-top: 0
+		.row
+			justify-content: center
+.about-8
+	background-color: #f5f5f5
+	.block-title
+		text-align: center
+	.item
+		background-color: rgb(1, 168, 227)
+		width: 285px
+		height: 200px
+		padding: 0 65px
+		display: flex
+		align-items: center
+		justify-content: center
+		@media screen and ( max-width: 1199px)
+			width: 100%
+			padding: 0 30px
+		@media screen and ( max-width: 991px)
+			height: 100px
+			margin-bottom: 30px
+		h3 
+			font-size: 24px
+			
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			text-transform: uppercase
+			text-align: center
+	.slide-block
+		background-color: rgb(255, 255, 255)
+		margin-bottom: 30px
+		height: 200px
+		padding: 30px
+		@media screen and ( max-width: 991px)
+			padding: 30px
+			height: auto
+			.item
+				margin-bottom: 0
+		.swiper-slide
+			display: flex
+			justify-content: center
+		.item
+			cursor: pointer
+			width: 148px
+			height: 155px
+			padding: 0
+			background-color: #ffffff
+			figure
+				width: 100%
+				.img
+					border-width: 1px
+					border-color: rgb(224, 224, 224)
+					border-style: solid
+					background-color: rgb(255, 255, 255)
+					width: 100%
+					height: 98px
+					text-align: center
+					line-height: 98px
+				figcaption
+					.desc
+						margin-top: 15px
+						p 
+							font-size: 14px
+							
+							color: rgb(51, 51, 51)
+							line-height: 1.571
+					@media screen and ( max-width: 991px)
+						.desc
+							margin-top: 10px
+			@media screen and ( max-width: 575px)
+				width: 100%
+				height: auto
+			&:hover
+				figure
+					.img
+						border-color: $main-color
+		.swiper-button-next,
+		.swiper-button-prev
+			top: 40%
+			background-image: none
+			border-width: 1px
+			border-color: rgb(212, 212, 212)
+			border-style: solid;
+			background-color: rgb(255, 255, 255)
+			width: 38px
+			height: 38px
+			display: flex
+			align-items: center
+			justify-content: center
+			&:hover
+				background-color: $main-color
+				border: none
+				&::before
+					color: #ffffff
+
+		.swiper-button-next
+			right: 15px
+			&::before
+				font-family: Linearicons-Free
+				content: '\e876'
+				font-size: 18px
+				color: #999999
+		.swiper-button-prev
+			left: 15px
+			&::before
+				font-family: Linearicons-Free
+				content: '\e875'
+				font-size: 18px
+				color: #999999
+.about-9
+	.shape-block
+		width: 1080px
+		height: 100%
+		text-align: center
+		margin: 0 auto
+		img 
+			width: 100%
+			height: 100%
+			object-position: right
+		@media screen and ( max-width: 1199px)
+			width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

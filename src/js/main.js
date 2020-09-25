@@ -15,18 +15,19 @@ const toggleMenuMobile = () => {
 };
 //Header when scroll
 const activeHeaderWhenScroll = () => {
-	window.addEventListener("scroll", function() {
-		if (window.pageYOffset > 0 && $(window).width() >= 1024) {
-			document.querySelector("header").classList.add("header-scoll");
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0 && $(window).width() >= 1024) {
+            document.querySelector("header").classList.add("header-scoll");
             $('header').find('.logo').addClass('active');
             $('header').find('.logo-scroll').addClass('active');
-		} else {
-			document.querySelector("header").classList.remove("header-scoll");
+        } else {
+            document.querySelector("header").classList.remove("header-scoll");
             $('header').find('.logo').removeClass('active');
             $('header').find('.logo-scroll').removeClass('active')
-		}
-	});
+        }
+    });
 }
+
 function moveNavitem() {
     if ($(window).width() <= 1024) {
         $('.icon > #desktop').appendTo('nav .nav-mobile');
@@ -54,6 +55,191 @@ function CrMainBanner() {
             prevEl: '.Cr-banner__slide .swiper-button-prev',
         },
     });
+    var swiper = new Swiper('.history-slide .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.history-slide .swiper-button-next',
+            prevEl: '.history-slide .swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            375: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        },
+    });
+    var swiper = new Swiper('.slide-block .top-slide', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        observer: true,
+        observeParents: true,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
+        navigation: {
+            nextEl: '#top .swiper-button-next',
+            prevEl: '#top .swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            375: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        },
+    });
+    var swiper = new Swiper('#bottom .bottom-slide', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        observer: true,
+        observeParents: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        navigation: {
+            nextEl: '#bottom .swiper-button-next',
+            prevEl: '#bottom .swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            375: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        },
+    });
+    var swiper = new Swiper('.slide-special .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1000,
+        pagination: {
+            el: '.slide-special .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        },
+    });
+    var swiper = new Swiper('.slide-home-3 .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1000,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: '.slide-home-3 .swiper-button-next',
+            prevEl: '.slide-home-3 .swiper-button-prev',
+            clickable: true,
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        },
+    });
+    var swiper = new Swiper('.slide-home .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1000,
+        navigation: {
+            nextEl: '.slide-home .swiper-button-next',
+            prevEl: '.slide-home .swiper-button-prev',
+            clickable: true,
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        },
+    });
+    var swiper = new Swiper('.slide-home-5 .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        loop: true,
+        navigation: {
+            nextEl: '.slide-home-5 .swiper-button-next',
+            prevEl: '.slide-home-5 .swiper-button-prev',
+            clickable: true,
+        },
+    });
 }
 //Check banner
 const checkLayoutBanner = () => {
@@ -62,11 +248,11 @@ const checkLayoutBanner = () => {
     const mainBanner = $('#home-banner');
     if (mainBanner.length >= 1) {
         $('main').css('padding-top', heightHeader)
-    }else if(pagesBanner.length >= 1){
+    } else if (pagesBanner.length >= 1) {
         $('main').css('padding-top', heightHeader)
-    }else {
-		$('main').css('padding-top', heightHeader);
-	}
+    } else {
+        $('main').css('padding-top', heightHeader);
+    }
 
 }
 
@@ -156,11 +342,11 @@ function Faqs() {
 
 function activeMobileMenu() {
     if ($(window).width() <= 1024) {
-        $('.nav-item.dropdown').on('click', function(e) {
+        $('.nav-item.dropdown').on('click', function (e) {
             e.stopPropagation();
             $(e.currentTarget).children('.dropdown-menu').slideToggle();
         });
-        $('.dropdown-item.dropdown').on('click', function(j) {
+        $('.dropdown-item.dropdown').on('click', function (j) {
             j.stopPropagation();
             $(j.currentTarget).children('.sup-menu').slideToggle();
         });

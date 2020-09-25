@@ -11,9 +11,6 @@
 	&__slide 
 		position: relative
 		height: calc(100vh - 10vh)
-	@media screen and (max-width: 1024px) 
-		&__slide 
-			height: auto
 		.swiper-slide 
 			height: 100%
 			position: relative
@@ -40,7 +37,7 @@
 
 				h1 
 					font-size: 48px
-					font-family: "Sarabun"
+					
 					color: rgb(255, 255, 255)
 					font-weight: bold
 					text-align: center
@@ -147,52 +144,8 @@
 
 				100% 
 					opacity: 0
-
-	.swiper-button-prev,
-	.swiper-button-next 
-		position: absolute
-		background-image: none
-		width: 50px
-		height: 50px
-		visibility: hidden
-		opacity: 0
-		transition: all .3s ease-in-out
-		border: none
-		display: flex
-		align-items: center
-		justify-content: center
-	
-
-	.swiper-button-prev 
-		left: 10px
-
-		&::after 
-			position: absolute
-			width: 100%
-			height: 100%
-			top: 0
-			left: 0
-			content: '\e875'
-			font-family: 'Linearicons-Free'
-			font-size: 30px
-			color: #fff
-			font-weight: 900
-
-	.swiper-button-next 
-		right: 0
-
-		&::after 
-			position: absolute
-			width: 100%
-			height: 100%
-			top: 0
-			left: 0
-			content: '\e876'
-			font-family: 'Linearicons-Free'
-			font-size: 30px
-			color: #fff
-			font-weight: 900
-
+		@media screen and ( max-width: 375px)
+			height: 30vh
 	&__list
 		position: absolute
 		width: 100%
@@ -224,19 +177,21 @@
 				z-index: 3
 				transform: rotate(45deg)
 			.nav-link
+				cursor: pointer
 				padding-left: 30px
 				height: 100%
 				display: flex
 				align-items: center
-				i 
+				i,
+				em 
 					font-size: 36px
 					color: rgb(255, 255, 255)
 					text-align: center
 					padding-right: 15px
-				p 
-					font-size: 16px
-					font-family: "Sarabun"
-					color: rgb(255, 255, 255)
+				
+				font-size: 16px
+				
+				color: rgb(255, 255, 255)
 			&:hover
 				background-color: #ed1b24
 				background-image: linear-gradient( -45deg,  rgba($color: #fff, $alpha: .3) 0%, rgba($color: #fff, $alpha: .2) 100%)
