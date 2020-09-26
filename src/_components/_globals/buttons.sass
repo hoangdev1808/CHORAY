@@ -39,12 +39,15 @@ button
 		line-height: 50px
 		border-radius: 0
 		font-size: 18px
-		
+		@media screen and ( max-width: 375px)
+			height: 40px
+			line-height: 40px
+			width: 140px
 		color: rgb(1, 168, 227)
 		.icon
 			position: absolute
 			top: 50%
-			right: 20px
+			right: 13px
 			transform: translateY(-50%)
 		&:hover
 			background-image: linear-gradient( 25deg, #01a8e3 0%, #7fd3f1 100%)

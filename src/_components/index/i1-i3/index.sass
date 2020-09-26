@@ -1,5 +1,4 @@
 .home-1
-	padding-bottom: 0
 	@media screen and ( max-width: 375px)
 		padding-bottom: 20px
 	.content
@@ -99,7 +98,6 @@
 							.img
 								height: 253px
 .home-2
-	padding-bottom: 0
 	.section-header
 		display: flex
 		flex-wrap: wrap
@@ -146,8 +144,7 @@
 					li 
 						margin-right: 5px
 						padding-right: 5px
-						a 
-							font-size: 14px
+						font-size: 12px
 	.content
 		background-color: #f8f8f8
 		padding-top: 20px
@@ -193,7 +190,6 @@
 					.item
 						margin-bottom: 0
 .home-3
-	padding-bottom: 0
 	.slide-home
 		position: relative
 		figure
@@ -239,6 +235,8 @@
 
 		.swiper-button-next
 			right: -35px
+			@media screen and ( max-width: 375px)
+				right: 0
 			&::before
 				font-family: Linearicons-Free
 				content: '\e876'
@@ -246,6 +244,8 @@
 				color: #999999
 		.swiper-button-prev
 			left: -35px
+			@media screen and ( max-width: 375px)
+				left: 0
 			&::before
 				font-family: Linearicons-Free
 				content: '\e875'
