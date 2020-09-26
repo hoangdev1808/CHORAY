@@ -19,19 +19,22 @@
 								object-fit: cover
 						figcaption
 							width: 100%
-							padding: 20px
+							height: 185px
+							padding: 0 20px
+							padding-top: 15px
 							background-color: #ffffff
 							border-width: 1px
 							border-color: rgb(236, 236, 236)
 							border-style: solid
-							
+							.date
+								margin-bottom: 7px
 							.desc
 								overflow: hidden
 								text-overflow: ellipsis
 								display: -webkit-box
 								-webkit-line-clamp: 4
 								-webkit-box-orient: vertical
-								margin-bottom: 25px
+								margin-bottom: 15px
 								h1 
 									font-size: 18px
 									
@@ -51,7 +54,8 @@
 										color: $main-color
 			.swiper-pagination
 				width: 100%
-				left: 0
+				position: static
+				text-align: left
 				.swiper-pagination-bullet
 					border-radius: 0
 					width: 246px
@@ -65,9 +69,6 @@
 				.slide-block
 					overflow: hidden
 				.swiper-pagination
-					position: absolute
-					left: 50%
-					transform: translateX(-50%)
 					.swiper-pagination-bullet
 						width: 90px
 		
@@ -89,7 +90,7 @@
 			.slide-special
 				.swiper-pagination
 					.swiper-pagination-bullet
-						width: 30px
+						width: 43px
 		@media screen and ( max-width: 575px)
 			.slide-special
 				.slide-block
@@ -116,6 +117,10 @@
 					position: relative
 					margin-right: 15px
 					padding-right: 15px
+					font-size: 16px
+					cursor: pointer
+					color: #111111
+					line-height: 1.2
 					&:last-child
 						margin-right: 0
 						padding-right: 0
@@ -129,11 +134,9 @@
 						width: 2px
 						content: ''
 						background-color: #adadad
-					a 
-						font-size: 16px
-						
-						color: #111111
-						line-height: 1.2
+					&.active
+						color: $main-color
+						font-weight: 600
 		@media screen and ( max-width: 767px)
 			.block-title
 				margin-bottom: 10px
@@ -149,6 +152,10 @@
 		background-color: #f8f8f8
 		padding-top: 20px
 		padding-bottom: 60px
+		.panel
+			display: none
+			&.active
+				display: block
 		.item 
 			position: relative
 			padding-right: 30px

@@ -147,6 +147,7 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
+        
         pagination: {
             el: '.slide-special .swiper-pagination',
             clickable: true,
@@ -205,6 +206,9 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
+        loop:true,
+        observer: true,
+        observeParents: true,
         navigation: {
             nextEl: '.slide-home .swiper-button-next',
             prevEl: '.slide-home .swiper-button-prev',
@@ -238,6 +242,68 @@ function CrMainBanner() {
             nextEl: '.slide-home-5 .swiper-button-next',
             prevEl: '.slide-home-5 .swiper-button-prev',
             clickable: true,
+        },
+    });
+    var swiper = new Swiper('#top .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1000,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: '#top .swiper-button-next',
+            prevEl: '#top .swiper-button-prev',
+            clickable: true,
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        },
+    });
+    var swiper = new Swiper('#bottom .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        speed: 1000,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: '#bottom .swiper-button-next',
+            prevEl: '#bottom .swiper-button-prev',
+            clickable: true,
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
         },
     });
 }
@@ -352,7 +418,23 @@ function activeMobileMenu() {
         });
     }
 }
+function tabs() {
+	$('.tabs > li').on('click', function() {
+		var $panel = $(this).closest('.home-2');
+		$panel.find('li.active').removeClass('active');
+		$(this).addClass('active');
+		var panelToShow = $(this).attr('rel');
+		$panel.find('.panel.active').fadeOut(300, showNextPanel);
 
+		function showNextPanel() {
+			$(this).removeClass('active');
+			$('#' + panelToShow).fadeIn(300, function() {
+				$(this).addClass('active').fadeIn(300);
+			});
+		};
+	});
+
+}
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
     activeHeaderWhenScroll();
@@ -364,4 +446,5 @@ document.addEventListener('DOMContentLoaded', () => {
     Accordiion();
     Faqs();
     activeMobileMenu();
+    tabs();
 });

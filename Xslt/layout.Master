@@ -55,12 +55,11 @@
 									</div>
 								</div>
 							</div>
-							<div id="search-box">
-								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Tìm sản phẩm...">
-									<button class="searchbutton btn btn__search"><em class="material-icons">search</em></button>
-								</div>
-							</div>
+							
+									<portal:modulewrapper id="mdl186" runat="server" configuremoduleid="186" />
+									<%-- <input class="form-control" type="text" placeholder="Tìm sản phẩm...">
+									<button class="searchbutton btn btn__search"><em class="material-icons">search</em></button> --%>
+							
 						</nav>
 					</div>
 				</header>
