@@ -126,67 +126,15 @@
             <section class="section about-6">
                 <div class="container">
                     <div class="block-title">
-                        <h2>Ban lãnh đạo</h2>
+                        <h2>
+                            <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                        </h2>
                     </div>
-                    <div class="row">
-                        <div class="item">
-                            <figure>
-                                <div class="img">
-                                    <img src="./assets/images/gio-thieu/a-4.png" alt=""/>
-                                </div>
-                                <figcaption>
-                                    <div class="desc">
-                                        <h3>Giám đốc</h3>
-                                        <span>Bí thư đảng uỷ</span>
-                                        <p>BS.CKII. Nguyễn Tri Thức</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="top">
+                        <xsl:apply-templates select="News" mode="Top"></xsl:apply-templates>
                     </div>
                     <div class="bottom">
-                        <div class="item">
-                            <figure>
-                                <div class="img">
-                                    <img src="./assets/images/gio-thieu/a-5.png" alt=""/>
-                                </div>
-                                <figcaption>
-                                    <div class="desc">
-                                        <h3>Giám đốc</h3>
-                                        <span>Bí thư đảng uỷ</span>
-                                        <p>BS.CKII. Nguyễn Tri Thức</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <div class="img">
-                                    <img src="./assets/images/gio-thieu/a-6.png" alt=""/>
-                                </div>
-                                <figcaption>
-                                    <div class="desc">
-                                        <h3>Giám đốc</h3>
-                                        <h4>Bí thư đảng uỷ</h4>
-                                        <p>BS.CKII. Nguyễn Tri Thức</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <div class="img">
-                                    <img src="./assets/images/gio-thieu/a-7.png" alt=""/>
-                                </div>
-                                <figcaption>
-                                    <div class="desc">
-                                        <h3>Giám đốc</h3>
-                                        <span>Bí thư đảng uỷ</span>
-                                        <p>BS.CKII. Nguyễn Tri Thức</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
+                        <xsl:apply-templates select="News" mode="Bottom"></xsl:apply-templates>
                     </div>
                 </div>
             </section>
@@ -195,220 +143,19 @@
             <section class="section about-7">
                 <div class="container">
                     <div class="block-title">
-                        <h2>Nguồn nhân lục</h2>
-                        <p>Không ngừng sáng tạo – Phát triển bền vững</p>
-                        <p>Giỏi chuyên môn – Vững nghiệp vụ</p>
-                        <p>Tập thể đoàn kết – Phát huy truyền thống và y hiệu bệnh viện Chợ Rẫy</p>
+                        <h2>
+                            <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                        </h2>
+                        <xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
                     </div>
                     <div class="top">
                         <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
+                            <xsl:apply-templates select="News" mode="top"></xsl:apply-templates>
                         </div>
                     </div>
                     <div class="bottom">
                         <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                                <div class="item">
-                                    <h3>Điều trị ngoại trú</h3>
-                                    <p>5.500
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span>bệnh nhân/ngày</span>
-                                    </p>
-                                </div>
-                            </div>
+                            <xsl:apply-templates select="News" mode="bottom"></xsl:apply-templates>
                         </div>
                     </div>
                 </div>
@@ -418,153 +165,15 @@
             <section class="section about-8">
                 <div class="container">
                     <div class="block-title">
-                        <h2>Thành tựu</h2>
+                        <h2>
+                            <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                        </h2>
                     </div>
                     <div class="row">
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="item">
-                                <h3>Niềm vinh dự cao quý</h3>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="slide-block" id="top">
-                                <div class="swiper-container top-slide">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
+                        <xsl:apply-templates select="Zone" mode="ThanhTuu1"></xsl:apply-templates>
                     </div>
                     <div class="row">
-                        <div class="col-xl-3 col-lg-3">
-                            <div class="item">
-                                <h3>Niềm vinh dự cao quý</h3>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="slide-block" id="bottom">
-                                <div class="swiper-container bottom-slide">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <figure>
-                                                    <div class="img">
-                                                        <img src="./assets/images/gio-thieu/a-8.png" alt=""/>
-                                                    </div>
-                                                    <figcaption>
-                                                        <div class="desc">
-                                                            <p>Huân chương lao động hạng I (lần 2) năm 2016</p>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
+                        <xsl:apply-templates select="Zone" mode="ThanhTuu2"></xsl:apply-templates>
                     </div>
                 </div>
             </section>
@@ -574,9 +183,11 @@
                 <div class="container">
                     <div class="shape-block">
                         <div class="block-title">
-                            <h2>Sơ đồ tổ chức</h2>
+                            <h2>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </h2>
                         </div>
-                        <img src="./assets/images/gio-thieu/so do.png" alt=""/>
+                        <xsl:apply-templates select="News" mode="Shape"></xsl:apply-templates>
                     </div>
                 </div>
             </section>
@@ -614,7 +225,9 @@
             <div class="item">
                 <div class="item-title">
                     <em class="ri-hand-heart-fill"></em>
-                    <p><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></p>
+                    <p>
+                        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                    </p>
                 </div>
                 <div class="desc">
                     <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
@@ -692,5 +305,205 @@
                 </figcaption>
             </figure>
         </div>
+    </xsl:template>
+    <xsl:template match="News" mode="Top">
+        <xsl:if test="position()=1">
+            <div class="item">
+                <figure>
+                    <div class="img">
+                        <img >
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                    <figcaption>
+                        <div class="desc">
+                            <h3>
+                                <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+                            </h3>
+                            <span>
+                                <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                            </span>
+                            <p>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="News" mode="Bottom">
+        <xsl:if test="position()&gt;1 and position()&lt;4">
+            <div class="item">
+                <figure>
+                    <div class="img">
+                        <img >
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                    <figcaption>
+                        <div class="desc">
+                            <h3>
+                                <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+                            </h3>
+                            <span>
+                                <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                            </span>
+                            <p>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="News" mode="top">
+        <xsl:if test="position()&gt;0 and position()&lt;5">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="item">
+                    <h3>
+                        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                    </h3>
+                    <p>
+                        <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                        <span>
+                            <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="News" mode="bottom">
+        <xsl:if test="position()&gt;4 and position()&lt;9">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="item">
+                    <h3>
+                        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                    </h3>
+                    <p>
+                        <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                        <span>
+                            <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="Zone" mode="ThanhTuu1">
+        <xsl:if test="position()=1">
+            <div class="col-xl-3 col-lg-3">
+                <div class="item">
+                    <h3>
+                        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9">
+                <div class="slide-block" id="top">
+                    <div class="swiper-container top-slide">
+                        <div class="swiper-wrapper">
+                            <xsl:apply-templates select="News" mode="TT1"></xsl:apply-templates>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="Zone" mode="ThanhTuu2">
+        <xsl:if test="position()=2">
+            <div class="col-xl-3 col-lg-3">
+                <div class="item">
+                    <h3>
+                        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9">
+                <div class="slide-block" id="bottom">
+                    <div class="swiper-container bottom-slide">
+                        <div class="swiper-wrapper">
+                            <xsl:apply-templates select="News" mode="TT2"></xsl:apply-templates>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="News" mode="TT1">
+        <div class="swiper-slide">
+            <div class="item">
+                <figure>
+                    <div class="img">
+                        <img >
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                    <figcaption>
+                        <div class="desc">
+                            <p>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="News" mode="TT2">
+        <div class="swiper-slide">
+            <div class="item">
+                <figure>
+                    <div class="img">
+                        <img >
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                    <figcaption>
+                        <div class="desc">
+                            <p>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="News" mode="Shape">
+        <img >
+            <xsl:attribute name="src">
+                <xsl:value-of select="ImageUrl"></xsl:value-of>
+            </xsl:attribute>
+            <xsl:attribute name="alt">
+                <xsl:value-of select="Title"></xsl:value-of>
+            </xsl:attribute>
+        </img>
     </xsl:template>
 </xsl:stylesheet>
