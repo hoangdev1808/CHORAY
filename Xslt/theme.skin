@@ -18,7 +18,8 @@
     ImageWidth="150"
 	/>
 <portal:NewsDisplaySettings runat="server" 
-	ShowAttribute="true"
+    ShowAttribute="true"
+    ShowSubtitle="true"
 	/>
 <portal:SharedFilesDisplaySettings runat="server" 
 	ShowFolder="false"
