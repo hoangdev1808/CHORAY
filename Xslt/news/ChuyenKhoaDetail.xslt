@@ -17,7 +17,7 @@
                         </ul>
                     </div>
                     <div class="row">
-                        <!-- <xsl:apply-templates select="/News/ProductRelated" mode="ProductRelated"></xsl:apply-templates> -->
+                        <xsl:apply-templates select="News/ProductRelated" mode="ProductRelated"></xsl:apply-templates>
                     </div>
                 </div>
             </section>
@@ -154,11 +154,41 @@
     <xsl:template match="News" mode="Tuvan">
         <div class="question-card">
             <div class="question-title">
-                <p><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></p>
+                <p>
+                    <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                </p>
                 <em class="ri-arrow-drop-down-line"></em>
             </div>
             <div class="question-body">
-               <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+                <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="ProductRelated" mode="ProductRelated">
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="item">
+                <figure>
+                    <div class="img">
+                        <img >
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                    <figcaption>
+                        <div class="desc">
+                            <h3>
+                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                            </h3>
+                            <p>
+                                <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </xsl:template>

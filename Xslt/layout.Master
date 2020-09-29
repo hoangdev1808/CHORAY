@@ -25,7 +25,7 @@
 			<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
 			<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
 			<div id="wrapper">
-                <header>
+                <header class="kv-header">
 					<div class="container">
 						<nav>
 							<div class="logo">
