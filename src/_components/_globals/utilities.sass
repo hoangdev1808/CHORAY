@@ -524,7 +524,8 @@ body
 	@media screen and ( max-width: 1238.98px)
 		.title
 			width: 100%
-.product-detail-page
+.product-detail-page,
+.news-detail-page
 	#page-banner
 		display: none
 .section-header
@@ -622,31 +623,53 @@ figure
 				-webkit-box-orient: vertical
 			.wrap-form
 				padding-top: 40px
-				.form-group
-					.form-control
-						border-width: 1px
-						border-color: rgb(224, 224, 224)
-						border-style: solid
-						background-color: rgb(255, 255, 255)
-						width: 500px
-						height: 40px
-						border-radius: 0
-					textarea
-						border-width: 1px
-						border-color: rgb(224, 224, 224)
-						border-style: solid
-						background-color: rgb(255, 255, 255)
-						width: 500px
-						height: 120px
-						padding-left: 12px
+				#ctl00_mdl219_ctl00_pnlQuestions
+					.form-group
+						span 
+							position: relative
+							padding-top: 7px
+							padding-left: 20px
+							color: red
+							font-family: 'Sarabun', sans-serif
+							font-weight: 400
+							align-items: center
+							&::before
+								position: absolute
+								top: 65%
+								left: 0
+								transform: translateY(-50%)
+								padding-right: 10px
+								content: '\ECA0'
+								font-family: 'remixicon'
+						input
+							border-width: 1px
+							border-color: rgb(224, 224, 224)
+							border-style: solid
+							background-color: rgb(255, 255, 255)
+							width: 500px
+							height: 40px
+							border-radius: 0
+							padding-left: 15px
+						textarea
+							border-width: 1px
+							border-color: rgb(224, 224, 224)
+							border-style: solid
+							background-color: rgb(255, 255, 255)
+							width: 500px
+							height: 120px
+							padding-left: 12px
 				.frm-btnwrap
+					label
+						display: none
 					.frm-btn
 						position: relative
 						width: 170px
 						height: 50px
-						input
+						.frm-btn-submit
 							width: 100%
 							height: 100%
+						.frm-btn-reset
+							display: none
 						.material-icons
 							color: #ffffff
 							font-size: 20px
@@ -667,10 +690,11 @@ figure
 					.ri-quill-pen-line 
 						padding-right: 10px
 				.wrap-form
-					.form-group
-						.form-control,
-						textarea
-							width: 100%
+					#ctl00_mdl219_ctl00_pnlQuestions
+						.form-group
+							input,
+							textarea
+								width: 100%
 	@media screen and ( max-width: 575px)
 		.modal-content
 			padding: 15px

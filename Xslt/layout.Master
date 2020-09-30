@@ -148,7 +148,21 @@
 						</div>
 					</div>
 				</footer>
-                
+                <!-- Modal-->
+					<div class="modal fade" id="popupTV" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-dialog-centered container" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+								</div>
+								<div class="modal-body">
+									<portal:modulewrapper id="mdl218" runat="server" configuremoduleid="218" />
+									<portal:modulewrapper id="mdl219" runat="server" configuremoduleid="219" />
+									<em class="material-icons">arrow_right_alt</em>
+								</div>
+							</div>
+						</div>
+					</div>
 			</div>
 			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
 				<div class="row">

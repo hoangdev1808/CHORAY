@@ -19,23 +19,28 @@
             font-size: 13px
             font-weight: 400
             letter-spacing: 0.65px
+            margin-bottom: 0
         .social
             display: flex
             align-items: center
-            a 
-                width: 35px
-                height: 20px
+            ul 
+                padding-left: 0
                 display: flex
                 align-items: center
-                justify-content: center
-                color: white
-                i 
-                    font-size: 12px
-            .social-fb
-                background-color: #3b5c9f
-                margin-right: 10px
-            .social-tw
-                background-color: #429dd6
+                list-style: none
+                li 
+                    width: 35px 
+                    height: 20px
+                    text-align: center
+                    line-height: 20px
+                    a 
+                        em 
+                            color: #ffffff
+                    &:first-child
+                        background-color: #3b5c9f
+                        margin-right: 10px
+                    &:last-child
+                        background-color: #429dd6
     .hr-1
         table 
             padding: 29px 10px 16px 29px
@@ -59,9 +64,6 @@
                     font-weight: 400
                     @media ( max-width: 500px )
                         font-size: 16px
-                    &::before
-                        content: ":"
-                        margin-right: 5px
     .hr-2
         .t-4
             margin-top: 40px

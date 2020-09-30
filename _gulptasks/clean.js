@@ -1,10 +1,10 @@
 import del from "del";
 
-export const cleanDist = () => {
-	return del("dist")
+const cleanDist = () => {
+	return del("_dist")
 }
 
-export const cleanImage = () => {
+const cleanImage = () => {
 	return del("_dist/assets")
 }
 

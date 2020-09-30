@@ -6,12 +6,12 @@ import {
 	readFileSync
 } from "graceful-fs";
 
-export const copyImage = () => {
-	return src("src/assets/**/**.{svg,png,jpg,jpeg,gif,mp4}")
+const copyImage = () => {
+	return src("src/assets/**/*.{svg,png,jpg,jpeg,gif,mp4}")
 		.pipe(dest("_dist/assets"))
-}
+};
 
-export const copyFonts = () => {
+const copyFonts = () => {
 	let glob = JSON.parse(readFileSync("config.json"));
 	return src(glob.font, {
 			allowEmpty: true
@@ -19,7 +19,7 @@ export const copyFonts = () => {
 		.pipe(dest("_dist/fonts"));
 }
 
-export const copyFavicon = () => {
+const copyFavicon = () => {
 	return src("src/favicon.ico", {
 			allowEmpty: true
 		})
@@ -27,7 +27,7 @@ export const copyFavicon = () => {
 }
 
 module.exports = {
-	copyFonts,
 	copyImage,
+	copyFonts,
 	copyFavicon
 };

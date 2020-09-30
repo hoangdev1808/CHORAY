@@ -133,6 +133,12 @@
                             <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
                             <div class="box-btn">
                                 <a class="btn btn-ld">
+                                    <xsl:attribute name="data-toggle">
+                                        <xsl:text disable-output-escaping="yes">modal</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="data-target">
+                                        <xsl:text disable-output-escaping="yes">#popupTV</xsl:text>
+                                    </xsl:attribute>
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="Url"></xsl:value-of>
                                     </xsl:attribute>

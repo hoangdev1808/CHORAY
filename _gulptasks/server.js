@@ -41,7 +41,7 @@ export const server = () => {
 	], series(sassTask));
 
 	watch([
-		"src/img/**/**.{svg,png,jpg,speg,gif,jpge,PNG,JPGE,JPG,SVG,GIF,SPEG}"
+		"src/assets/**/**.{svg,png,jpg,speg,gif,jpge,PNG,JPGE,JPG,SVG,GIF,SPEG}"
 	], series(cleanImage, copyImage));
 
 	watch([

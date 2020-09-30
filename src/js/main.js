@@ -456,7 +456,12 @@ function coutingNumber() {
 		});
 	});
 }
-
+function changePlaceholder() {
+    $('.ld-5 .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký');
+    $('.ld-5 .content .material-icons').appendTo('.ld-5 .wrap-form .frm-btnwrap .frm-btn');
+    $('#popupTV .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký');
+    $('#popupTV .modal-body .material-icons').appendTo('#popupTV .wrap-form .frm-btnwrap .frm-btn');
+}
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
     activeHeaderWhenScroll();
@@ -470,4 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
     activeMobileMenu();
     tabs();
     coutingNumber();
+    changePlaceholder();
+    moveDiv();
 });
