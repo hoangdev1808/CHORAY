@@ -147,7 +147,7 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
-        
+
         pagination: {
             el: '.slide-special .swiper-pagination',
             clickable: true,
@@ -157,7 +157,7 @@ function CrMainBanner() {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            768:{
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -188,7 +188,7 @@ function CrMainBanner() {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            768:{
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -206,7 +206,7 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
-        loop:true,
+        loop: true,
         observer: true,
         observeParents: true,
         navigation: {
@@ -219,7 +219,7 @@ function CrMainBanner() {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            768:{
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -248,7 +248,7 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
-        loop:true,
+        loop: true,
         observer: true,
         observeParents: true,
         navigation: {
@@ -261,7 +261,7 @@ function CrMainBanner() {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            768:{
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -279,7 +279,7 @@ function CrMainBanner() {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 1000,
-        loop:true,
+        loop: true,
         observer: true,
         observeParents: true,
         navigation: {
@@ -292,7 +292,7 @@ function CrMainBanner() {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            768:{
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -418,50 +418,91 @@ function activeMobileMenu() {
         });
     }
 }
+
 function tabs() {
-	$('.tabs > li').on('click', function() {
-		var $panel = $(this).closest('.home-2');
-		$panel.find('li.active').removeClass('active');
-		$(this).addClass('active');
-		var panelToShow = $(this).attr('rel');
-		$panel.find('.panel.active').fadeOut(300, showNextPanel);
+    $('.tabs > li').on('click', function () {
+        var $panel = $(this).closest('.home-2');
+        $panel.find('li.active').removeClass('active');
+        $(this).addClass('active');
+        var panelToShow = $(this).attr('rel');
+        $panel.find('.panel.active').fadeOut(300, showNextPanel);
 
-		function showNextPanel() {
-			$(this).removeClass('active');
-			$('#' + panelToShow).fadeIn(300, function() {
-				$(this).addClass('active').fadeIn(300);
-			});
-		};
-	});
+        function showNextPanel() {
+            $(this).removeClass('active');
+            $('#' + panelToShow).fadeIn(300, function () {
+                $(this).addClass('active').fadeIn(300);
+            });
+        };
+    });
 
 }
+
 function coutingNumber() {
-	$('.counter').each(function() {
-		var $this = $(this),
-			countTo = $this.attr('data-count');
-		$({
-			countNum: $this.text()
-		}).animate({
-			countNum: countTo
-		}, {
-			duration: 500,
-			easing: 'linear',
-			step: function() {
-				$this.text(Math.floor(this.countNum));
-			},
-			complete: function() {
-				$this.text(this.countNum);
-			}
+    $('.counter').each(function () {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        $({
+            countNum: $this.text()
+        }).animate({
+            countNum: countTo
+        }, {
+            duration: 500,
+            easing: 'linear',
+            step: function () {
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+                $this.text(this.countNum);
+            }
 
-		});
-	});
+        });
+    });
 }
+
 function changePlaceholder() {
     $('.ld-5 .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký');
     $('.ld-5 .content .material-icons').appendTo('.ld-5 .wrap-form .frm-btnwrap .frm-btn');
     $('#popupTV .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký');
-    $('#popupTV .modal-body .material-icons').appendTo('#popupTV .wrap-form .frm-btnwrap .frm-btn');
+    $('#popupTV.modal .modal-body .material-icons').appendTo('#popupTV.modal .wrap-form .frm-btnwrap .frm-btn');
+    $('#popupKB .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký khám');
+    $('#popupKB.modal .modal-body .material-icons').appendTo('#popupKB.modal .wrap-form .frm-btnwrap .frm-btn');
 }
+
+function Tool() {
+    $('#block__tool').find('.icon-tool').on('click', function (n) {
+        $('#block__tool').toggleClass('active');
+    })
+}
+
+function rangeDate() {
+    $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+    }, function (start, end, label) {
+        var oneDay = 24 * 60 * 60 * 1000;
+        var count = Math.round((end - start) / oneDay);
+        $('#countDate').text(count);
+    });
+}
+
+function showBackToTop() {
+    var heughtTop = ($('header').outerHeight()) + ($('#home-banner').outerHeight())
+    var heightPageTop = ($('header').outerHeight()) + ($('#page-banner').outerHeight())
+    $(window).scroll(function () {
+        if (($(this).scrollTop() > heughtTop) || ($(this).scrollTop() > heightPageTop)) {
+            $("#back-to-top").addClass("active");
+        } else {
+            $("#back-to-top").removeClass("active");
+        }
+    });
+
+    $("#back-to-top").on("click", function (e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
     activeHeaderWhenScroll();
@@ -476,5 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs();
     coutingNumber();
     changePlaceholder();
-    moveDiv();
+    Tool();
+    rangeDate();
+    showBackToTop();
 });

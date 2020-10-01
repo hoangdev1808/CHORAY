@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 	</head>
 	<body>
 		<form action="">
@@ -338,15 +339,216 @@
 					</div>
 				</footer>
 			</div>
-			<div class="dekstop" id="block__tool">
-				<ul>
-					<li><a href=""><em class="fa fa-shield"></em></a></li>
-					<li><a href="shopping.html"><em class="fa fa-cart-plus"></em></a></li>
-					<li><a href=""><em class="fa fa-phone"></em></a></li>
+			<div id="block__tool">
+				<div class="icon-tool">
+					<div class="icon"><em class="ri-settings-2-line"></em></div>
+				</div>
+				<ul class="tool-main">
+					<li class="item"><a href=""><em class="ri-mail-send-line"></em></a></li>
+					<li class="item has-sub"><a href=""><em class="ri-phone-line"></em></a>
+						<div class="sub-left"><span>0977.010.200</span>
+							<ul class="sub-menu">
+								<li class="sub-item"><a href="" data-toggle="modal" data-target="#popupKB"><em class="ri-file-add-line"></em><span>Đăng ký khám bệnh</span></a></li>
+								<li class="sub-item"><a href="" data-toggle="modal" data-target="#popupDV"><em class="ri-pen-nib-fill"></em><span>Đăng ký dịch vụ</span></a></li>
+								<li class="sub-item"><a href=""><em class="ri-calendar-2-line"></em><span>Lịch khám bệnh</span></a></li>
+								<li class="sub-item"><a href=""><em class="ri-stethoscope-line"></em><span>Tìm bác sĩ</span></a></li>
+								<li class="sub-item"><a href=""><em class="ri-customer-service-2-fill"></em><span>Hướng dẫn</span></a></li>
+								<li class="sub-item"><a href="" data-toggle="modal" data-target="#popupTV"><em class="ri-quill-pen-line"></em><span>Đăng ký tư vấn</span></a></li>
+								<li class="sub-item"><a href="" data-toggle="modal" data-target="#popupDV"><em class="ri-bus-line"></em><span>Dịch vụ vận chuyển</span></a></li>
+								<li class="sub-item"><a href=""><em class="ri-phone-line"></em><span>Hotline cấp cứu</span></a></li>
+								<li class="sub-item"><a href=""><em class="ri-organization-chart"></em><span>Sơ đồ bệnh viện</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="item"><a href="" data-toggle="modal" data-target="#popupYK"><em class="ri-question-answer-line"></em></a></li>
 				</ul>
+			</div>
+			<!-- Modal-->
+			<div class="modal fade" id="popupTV" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered container" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						</div>
+						<div class="modal-body"> 
+							<div class="title"><em class="ri-quill-pen-line"></em>
+								<p>Đăng ký tư vấn</p>
+							</div>
+							<div class="desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+							</div>
+							<div class="wrap-form">
+								<div class="form-group">
+									<input type="text" placeholder="Họ tên">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Số điện thoại">
+								</div>
+								<div class="form-group">
+									<textarea type="text" placeholder="Nội dung" cols="30" rows="10"></textarea>
+								</div>
+								<div class="form-group frm-btnwrap">
+									<div class="frm-btn">
+										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name="" value="Đăng ký"><em class="material-icons">arrow_right_alt</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="popupDV" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered container" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						</div>
+						<div class="modal-body"> 
+							<div class="title"><em class="ri-quill-pen-line"></em>
+								<p>Đăng ký dịch vụ</p>
+							</div>
+							<div class="desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+							</div>
+							<div class="wrap-form">
+								<div class="form-group">
+									<input type="text" placeholder="Họ tên">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Số điện thoại">
+								</div>
+								<div class="form-group">
+									<select placeholder="Chọn khoa">
+										<option value="Khoa 1">Khoa 1</option>
+										<option value="Khoa 2">Khoa 2</option>
+										<option value="Khoa 3">Khoa 3</option>
+										<option value="Khoa 4">Khoa 4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select placeholder="Chọn bác sĩ">
+										<option value="Khoa 1">Khoa 1</option>
+										<option value="Khoa 2">Khoa 2</option>
+										<option value="Khoa 3">Khoa 3</option>
+										<option value="Khoa 4">Khoa 4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select placeholder="Chọn gói dịch vụ">
+										<option value="Khoa 1">Khoa 1</option>
+										<option value="Khoa 2">Khoa 2</option>
+										<option value="Khoa 3">Khoa 3</option>
+										<option value="Khoa 4">Khoa 4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<textarea type="text" placeholder="Nhu cầu khám bệnh" cols="30" rows="10"></textarea>
+								</div>
+								<div class="form-group frm-btnwrap">
+									<div class="frm-btn">
+										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name="" value="Đăng ký khám"><em class="material-icons">arrow_right_alt</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="popupKB" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered container" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						</div>
+						<div class="modal-body"> 
+							<div class="title"><em class="ri-quill-pen-line"></em>
+								<p>Đăng ký khám bệnh</p>
+							</div>
+							<div class="desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+							</div>
+							<div class="wrap-form">
+								<div class="form-group">
+									<input type="text" placeholder="Họ tên">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Số điện thoại">
+								</div>
+								<div class="form-group">
+									<select placeholder="Chọn khoa">
+										<option value="Khoa 1">Khoa 1</option>
+										<option value="Khoa 2">Khoa 2</option>
+										<option value="Khoa 3">Khoa 3</option>
+										<option value="Khoa 4">Khoa 4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<input type="text" name="daterange" placeholder="Chọn ngày khám">
+								</div>
+								<div class="form-group">
+									<textarea type="text" placeholder="Nhu cầu khám bệnh" cols="30" rows="10"></textarea>
+								</div>
+								<div class="form-group frm-btnwrap">
+									<div class="frm-btn">
+										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name="" value="Đăng ký khám"><em class="material-icons">arrow_right_alt</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="popupYK" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered container" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						</div>
+						<div class="modal-body"> 
+							<div class="title"><em class="ri-questionnaire-line"></em>
+								<p>Form gửi ý kiến</p>
+							</div>
+							<div class="desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+							</div>
+							<div class="wrap-form">
+								<div class="form-group">
+									<input type="text" placeholder="Họ tên">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Số điện thoại">
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Tiêu đề">
+								</div>
+								<div class="form-group">
+									<textarea type="text" placeholder="Nội dung" cols="30" rows="10"></textarea>
+								</div>
+								<div class="form-group frm-btnwrap">
+									<div class="frm-btn">
+										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name="" value="Gửi"><em class="material-icons">arrow_right_alt</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="overlay"></div>
 		</form>
+		<div id="back-to-top"><em class="lnr lnr-arrow-up"></em></div>
 		<script type="text/javascript" src="./js/core.min.js"></script>
 		<script type="text/javascript" src="./js/main.min.js"></script>
 	</body>
