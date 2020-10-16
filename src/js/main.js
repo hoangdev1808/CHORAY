@@ -466,6 +466,10 @@ function changePlaceholder() {
     $('#popupTV.modal .modal-body .material-icons').appendTo('#popupTV.modal .wrap-form .frm-btnwrap .frm-btn');
     $('#popupKB .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký khám');
     $('#popupKB.modal .modal-body .material-icons').appendTo('#popupKB.modal .wrap-form .frm-btnwrap .frm-btn');
+    $('#popupDV .wrap-form .frm-btnwrap .frm-btn input').attr('value', 'Đăng ký khám');
+    $('#popupDV.modal .modal-body .material-icons').appendTo('#popupDV.modal .wrap-form .frm-btnwrap .frm-btn');
+    $('#popupYK.modal .modal-body .material-icons').appendTo('#popupYK.modal .wrap-form .frm-btnwrap .frm-btn');
+    $('.cr-contact .box-form .material-icons').appendTo('.cr-contact .box-form .wrap-form .frm-btnwrap .frm-btn');
 }
 
 function Tool() {
@@ -503,6 +507,14 @@ function showBackToTop() {
     });
 }
 
+function moverComment(){
+    $('.product-detail-page').find('.pcommentpanel').appendTo('.product-detail-page .form-block .wrap-form')
+    $('.form-block .wrap-form .pcommentpanel .commentlist').appendTo('.comment-block .container');
+    $('.form-block .wrap-form .pcommentpanel p').appendTo('.commentlist').before($('.comment'));
+    $('.comment-block .container h5').appendTo('.commentlist').before($('.comment'));
+    $('.commentlist p').appendTo('.commentlist h5');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
     activeHeaderWhenScroll();
@@ -520,4 +532,5 @@ document.addEventListener('DOMContentLoaded', () => {
     Tool();
     rangeDate();
     showBackToTop();
+    moverComment();
 });

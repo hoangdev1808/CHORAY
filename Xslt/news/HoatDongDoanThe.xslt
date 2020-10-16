@@ -25,7 +25,7 @@
                             </xsl:attribute>
                             <xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
                             <div class="icon">
-                                <img src="/Data/Sites/1/skins/default/assets/icons/doingu_ct.png" alt=""/>
+                               
                             </div>
                         </a>
                     </div>

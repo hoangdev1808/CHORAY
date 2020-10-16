@@ -10,6 +10,7 @@
             </h3>
         </div>
         <xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
+        <div class="compare-panel"></div>
     </xsl:template>
     <xsl:template match="Product">
         <xsl:if test="position()&lt;7">
@@ -35,6 +36,7 @@
                                     <xsl:value-of select="Title"></xsl:value-of>
                                 </xsl:attribute>
                                 <xsl:value-of select="Title"></xsl:value-of>
+                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
                             <p>24 nhận xét</p>
                         </div>
@@ -52,18 +54,9 @@
                                 <xsl:text>Xem chi tiết</xsl:text>
                                 <span class="material-icons">arrow_forward</span>
                             </a>
-                            <a class="btn btn__book">
-                                <xsl:attribute name="href">
-                                    <xsl:text disable-output-escaping="yes">javascript:;</xsl:text>
-                                </xsl:attribute>
-                                <xsl:attribute name="data-toggle">
-                                    <xsl:text disable-output-escaping="yes">modal</xsl:text>
-                                </xsl:attribute>
-                                <xsl:attribute name="data-target">
-                                    <xsl:text disable-output-escaping="yes">#popupKB</xsl:text>
-                                </xsl:attribute>
-                                <span class="material-icons">event_available</span>
-                                <xsl:text disable-output-escaping="yes">đặt lịch</xsl:text>
+                            <a class="btn btn__book" href="" data-toggle="modal" data-target="#popupKB">
+                                <span class="material-icons">event_available</span>đặt lịch
+                            
                             </a>
                         </div>
                     </figcaption>

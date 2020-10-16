@@ -35,11 +35,10 @@
                         </h3>
                         <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
                         <div class="box-btn">
-                            <a class="btn btn__viewmore" href="">Xem thêm
+                            <a class="btn btn__viewmore" href="" data-toggle="modal" data-target="#popupTT">Xem thêm
                                 
-                                <div class="icon">
-                                    <img src="/Data/Sites/1/skins/default/assets/icons/doingu_ct.png" alt=""/>
-                                </div>
+                                
+                                <div class="icon"></div>
                             </a>
                             <a class="btn btn__popup" href="" data-toggle="modal" data-target="#popupTT">
                                 <span>Xem trang web</span>

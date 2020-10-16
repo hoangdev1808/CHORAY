@@ -64,8 +64,6 @@
 
 			&::before 
 				content: ''
-
-
 	.box-form 
 		width: 100%
 		.wrap-form
@@ -86,6 +84,11 @@
 						padding-right: 15px
 					&:last-child
 						padding-left: 15px
+					@media screen and ( max-width: 575px)
+						&:first-child
+							padding-right: 0
+						&:last-child
+							padding-left: 0
 			.form-group 
 				width: 100%
 				input 

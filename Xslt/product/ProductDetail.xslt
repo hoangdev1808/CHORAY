@@ -46,80 +46,12 @@
         <section class="form-block section">
             <div class="container">
                 <div class="wrap-form">
-                    <p>Gửi đánh giá bình luận</p>
-                    <div class="form-group">
-                        <label for="">1. Gửi bình luận, góp ý cho bác sĩ</label>
-                        <div class="f-input">
-                            <input type="text" placeholder="Hài lòng"></input>
-                            <input type="text" placeholder="Chưa hài lòng"></input>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">2. Gửi bình luận, góp ý cho bệnh viện</label>
-                        <div class="f-input">
-                            <textarea cols="30" rows="10" placeholder="Góp ý"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group frm-btnwrap">
-                        <div class="frm-btn">
-                            <input class="btn btn-default frm-btn-submit" type="submit" name="" value="Gửi"></input>
-                            <em class="material-icons">arrow_right_alt</em>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <section class="comment-block section">
             <div class="container">
-                <div class="comment-list">
-                    <p>Bình luận (200 bình luận)</p>
-                    <div class="item">
-                        <div class="item__header">
-                            <p>ID: lamchame200</p>
-                            <span>10 giờ trước</span>
-                        </div>
-                        <div class="item__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__header">
-                            <p>ID: lamchame200</p>
-                            <span>10 giờ trước</span>
-                        </div>
-                        <div class="item__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__header">
-                            <p>ID: lamchame200</p>
-                            <span>10 giờ trước</span>
-                        </div>
-                        <div class="item__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__header">
-                            <p>ID: lamchame200</p>
-                            <span>10 giờ trước</span>
-                        </div>
-                        <div class="item__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="view-more">
-                        <a class="btn btn__viewmore" href="">Xem thêm
-										
-                                        
-                            
-                            <div class="icon">
-                                <img src="./assets/icons/doingu_ct.png" alt=""/>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <h5>Bình luận</h5>
             </div>
         </section>
     </xsl:template>

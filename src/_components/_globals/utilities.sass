@@ -15,12 +15,12 @@
 // 		background-color: #fff
 // 	
 
-body 
+body
 	overflow-x: hidden
 
-	&.disabled 
+	&.disabled
 		overflow: hidden
-#overlay 
+#overlay
 	opacity: 0
 	visibility: hidden
 	pointer-events: none
@@ -34,69 +34,65 @@ body
 	z-index: 150
 	transition: .3s all ease-in-out
 
-	&.active 
+	&.active
 		opacity: 1
 		visibility: visible
 		pointer-events: visible
 
 .ovh
 	overflow: hidden
-.section 
+.section
 	margin-left: auto
 	padding: 30px 0
 
-	@media (min-width: 600px) 
+	@media (min-width: 600px)
 		padding: 35px 0
-	
 
-	@media (min-width: 768px) 
+	@media (min-width: 768px)
 		padding: 40px 0
-	
 
-	@media (min-width: 1025px) 
+	@media (min-width: 1025px)
 		padding: 45px 0
-	
 
-	@media (min-width: 1200px) 
+	@media (min-width: 1200px)
 		padding: 50px 0
-	
 
-	@media (min-width: 1438px) 
+	@media (min-width: 1438px)
 		padding: 60px 0
-.block-title 
+.block-title
 	padding-top: 0
 	margin-bottom: 19px
 
-	h2 
+	h2
 		font-size: 36px
-		
+
 		font-weight: bold
 		color: #333333
 
-		@media(max-width: 1025px) 
+		@media(max-width: 1025px)
 			font-size: 26px
-		@media(max-width: 991.98px) 
+		@media(max-width: 991.98px)
 			font-size: 20px
 	&.blue
 		text-align: center
 		margin-bottom: 30px
-		h2 
+		h2
 			font-size: 24px
-			
+
 			color: rgb(1, 168, 227)
 			font-weight: bold
-		@media screen and (max-width: 1025px) 
+		@media screen and (max-width: 1025px)
 			margin-bottom: 15px
 
-	@media screen and (max-width: 1025px) 
+	@media screen and (max-width: 1025px)
 		margin-bottom: 20px
-	
+
 	.category-nav
 		display: none
-	
-	@media screen and (max-width: 576px) 
+
+	@media screen and (max-width: 576px)
 		margin-bottom: 20px
-		flex-wrap: wrap 
+		flex-wrap: wrap
 		.category-nav
 			display: flex
 			margin-top: 20px
@@ -110,31 +106,29 @@ body
 			border-bottom: 1px solid #ffffff
 			background-color: #3361ae
 			width: 100%
-			em 
+			em
 				transition: .2s ease-in-out all
-			
+
 			&.active
 				em
 					transform: rotate(180deg)
-				
-			
-		
+
 		h1
 			width: 100%
-.pages 
+.pages
 	margin-left: auto
 	width: 100%
 
-	.modulepager 
+	.modulepager
 		display: flex
 		align-items: center
 		justify-content: center
 
-		.pagination 
+		.pagination
 			padding: 0
 			list-style: none
 
-			li 
+			li
 				background-color: rgb(255, 255, 255)
 				width: 38px
 				height: 38px
@@ -146,52 +140,46 @@ body
 				transition: ease-in-out all .3s
 				border: solid 1px $main-color
 
-				a 
+				a
 					font-size: 18px
 					color: $main-color
 					text-decoration: none
 					font-family: 'Sarabun'
-				
 
-				&:hover 
+				&:hover
 					background-color: $main-color
 
-					a 
+					a
 						color: #fff
-					
-				
 
-				&.active 
+				&.active
 					background-color: $main-color
-					a 
+					a
 						color: #fff
-.tab-panels 
-	ul 
+.tab-panels
+	ul
 		padding: 0
 		list-style: none
 		display: flex
 		align-items: center
 
-		li 
-			a 
+		li
+			a
 				cursor: pointer
 				display: inline-block
 				font-size: 16px
-				
+
 				color: rgb(153, 153, 153)
 				text-transform: uppercase
 				text-align: left
 				font-weight: 400
-			
 
-			@media(max-width: 991.98px) 
+			@media(max-width: 991.98px)
 				width: auto
-			
-		
 
-		&.active 
+		&.active
 			font-size: 16px
-			
+
 			color: rgb(51, 51, 51)
 			text-transform: uppercase
 			text-align: left
@@ -199,7 +187,7 @@ body
 			transition: all .3s ease-in-out
 			position: relative
 
-			&::after 
+			&::after
 				position: absolute
 				content: ''
 				width: 100%
@@ -207,33 +195,28 @@ body
 				background-color: $main-color
 				left: 0
 				bottom: -1.5px
-			
-		
-	
 
-	.panel 
+	.panel
 		background: #fff
 		padding: 30px
 		display: none
 
-		.panel__title 
-			p 
+		.panel__title
+			p
 				font-size: 18px
 				font-family: "Barlow"
 				color: rgb(51, 51, 51)
 				font-weight: bold
-			
-		
 
-		.panel__slide 
+		.panel__slide
 			position: relative
 
-			.panel-slide 
+			.panel-slide
 				max-width: 1020px
 				margin: 40px auto
 				cursor: pointer
 
-				.panel__img 
+				.panel__img
 					border: solid 1px rgb(234, 234, 234)
 					background-color: rgb(255, 255, 255)
 					height: 200px
@@ -243,66 +226,54 @@ body
 					justify-content: center
 					transition: all .3s ease-in-out
 
-					&:hover 
+					&:hover
 						border: solid 1px #0065b3
 						transition: all .3s ease-in-out
-					
-				
 
-				@media(max-width: 991.98px) 
+				@media(max-width: 991.98px)
 					max-width: 100%
 
-					.panel__img 
+					.panel__img
 						max-width: 100%
-					
-				
-			
-		
 
-		.panel__desc 
+		.panel__desc
 			max-width: 1020px
 			margin: 0 auto
 			padding-bottom: 50px
 			text-align: center
 
-			p 
+			p
 				font-size: 18px
 				font-weight: 400
 				line-height: 24px
 				font-family: "Barlow"
 				color: rgb(51, 51, 51)
-			
 
-			ul 
+			ul
 				padding: 0
 				list-style: none
 
-				li 
+				li
 					width: 100%
 					display: flex
 					margin-bottom: 16px
 					padding: 0
 
-					p 
+					p
 						font-size: 16px
 						color: rgb(51, 51, 51)
 						font-weight: 600
-					
 
-					span 
+					span
 						font-size: 16px
 						color: rgb(51, 51, 51)
-					
-				
-			
-		
 
-		.panel__list 
+		.panel__list
 			max-width: 1020px
 			margin: 0 auto
 			padding: 0 10px
 
-			.item 
+			.item
 				border: solid 1px rgb(234, 234, 234)
 				width: 256px
 				height: 255px
@@ -311,84 +282,73 @@ body
 				justify-content: center
 				padding: 0
 
-				@media screen and (max-width: 1025px) 
+				@media screen and (max-width: 1025px)
 					width: 100%
-				
-			
 
-			@media screen and (max-width: 1025px) 
+			@media screen and (max-width: 1025px)
 				max-width: 100%
-			
-		
 
-		@media(max-width: 991.98px) 
+		@media(max-width: 991.98px)
 			padding: 15px
 
-			.panel__slide 
-				.panel-slide 
+			.panel__slide
+				.panel-slide
 					max-width: 100%
 					margin: 10px auto
-				
-			
 
-			.panel__desc 
+			.panel__desc
 				max-width: 100%
 				text-align: justify
 				padding-bottom: 10px
 
-				p 
+				p
 					font-size: 14px
-				
-			
-		
 
-		&.active 
+		&.active
 			display: block
-.lcl 
+.lcl
 	overflow: hidden
 	display: -webkit-box
 	text-overflow: ellipsis
 	-webkit-box-orient: vertical
 
-	&-1 
+	&-1
 		-webkit-line-clamp: 1
-	
 
-	&-2 
+	&-2
 		-webkit-line-clamp: 2
-		
-	&-3 
+
+	&-3
 		-webkit-line-clamp: 3
-	
-	&-4 
+
+	&-4
 		-webkit-line-clamp: 4
 @media screen and ( max-width: 1199px)
-	.acc 
+	.acc
 		width: 100%
 		height: auto
 
-		.acc__card 
+		.acc__card
 			position: relative
-		
 
-		.acc__title 
+		.acc__title
 			display: flex
 			align-items: center
 			justify-content: space-between
 
-			.material-icons 
+			.material-icons
 				transition: all ease-in-out .3s
 				transform: rotate(0deg)
 				-webkit-transform: rotate(0deg)
 				-moz-transform: rotate(0deg)
 				-ms-transform: rotate(0deg)
 				-o-transform: rotate(0deg)
-			&.active 
-				.material-icons 
+			&.active
+				.material-icons
 					transform: rotate(180deg)
 					transition: all ease-in-out .3s
 
-		.acc__panel 
+		.acc__panel
 			display: none
 			margin: 0
 
@@ -401,23 +361,23 @@ body
 		width: 285px
 		height: 50px
 		padding-left: 20px
-		h3 
+		h3
 			font-size: 20px
-			
+
 			color: rgb(255, 255, 255)
 			font-weight: bold
 			text-transform: uppercase
 			line-height: 50px
 	.acnav
 		width: 100%
-		&__list 
+		&__list
 			padding-left: 0
 			margin: 0
 			list-style: none
 			.has-children
 				&.is-open
 					.label
-						span 
+						span
 							transform: rotate(180deg)
 							transition: .3s
 							color: #00adef
@@ -435,7 +395,7 @@ body
 					p
 						line-height: 50px
 						font-size: 16px
-						
+
 						color: #333333
 						font-weight: bold
 						text-transform: uppercase
@@ -446,7 +406,7 @@ body
 						transform: rotate(0deg)
 						transition: .3s
 					&.active
-						p 
+						p
 							color: #00adef
 				.list-level2
 					list-style: none
@@ -461,24 +421,24 @@ body
 							justify-content: flex-start
 							background: transparent
 							height: 50px
-							a 
+							a
 								font-size: 16px
-								
+
 								color: #333333
 								font-weight: bold
 								line-height: 50px
-							span 
+							span
 								line-height: 50px
 							&.active
-								a 
+								a
 									color: #00adef
 						&.is-open
 							.label
-								span 
+								span
 									transform: rotate(180deg)
 									transition: .3s
 									color: #00adef
-								a 
+								a
 									color: #00adef
 						.list-level3
 							list-style: none
@@ -487,13 +447,13 @@ body
 							display: none
 							li
 								margin-bottom: 17px
-								a 
+								a
 									font-size: 15px
-									
+
 									color: #656565
 									font-weight: 400
 								&.active
-									a 
+									a
 										color: #00adef
 								&:last-child
 									margin-bottom: 0
@@ -505,9 +465,9 @@ body
 			.nav-item
 				padding: 15px 0
 				border-bottom: solid 1px #e1e1e1
-				a 
+				a
 					font-size: 16px
-					
+
 					color: rgb(0, 173, 239)
 					font-weight: bold
 					text-transform: uppercase
@@ -518,7 +478,7 @@ body
 		margin-bottom: 30px
 		.acnav
 			padding-bottom: 0
-			&__list 
+			&__list
 				.nav-item
 					padding-left: 20px
 	@media screen and ( max-width: 1238.98px)
@@ -552,12 +512,12 @@ figure
 	cursor: pointer
 	.img
 		overflow: hidden
-		img 
+		img
 			transform: scale(1)
 			transition: .3s
 	&:hover
 		.img
-			img 
+			img
 				transform: scale(1.1)
 				transition: .3s
 		figcaption
@@ -594,11 +554,11 @@ figure
 					margin: 0
 					display: contents
 					span
-						font-size: 30px
-										
+						font-size: 25px
 						color: rgb(255, 255, 255)
 						line-height: 1.2
 						padding-bottom: 10px
+						font-weight: 300
 			.modal-body
 				padding: 0
 				.title
@@ -610,9 +570,8 @@ figure
 						font-family: "remixicon"
 						color: rgb(1, 168, 227)
 						padding-right: 20px
-					p 
+					p
 						font-size: 36px
-						font-family: "Sarabun"
 						color: rgb(17, 17, 17)
 						font-weight: bold
 						text-align: center
@@ -626,7 +585,7 @@ figure
 					padding-top: 40px
 					.form-group
 						position: relative
-						span 
+						span
 							position: absolute
 							top: 50%
 							transform: translateY(-50%)
@@ -637,6 +596,7 @@ figure
 							font-family: 'Sarabun', sans-serif
 							font-weight: 400
 							align-items: center
+							display: none
 							&::before
 								position: absolute
 								top: 65%
@@ -657,7 +617,7 @@ figure
 							&:placeholder
 								color: #a7a7a7
 						.RadPicker
-							.rcTable 
+							.rcTable
 								tbody
 									tr
 										td
@@ -686,10 +646,10 @@ figure
 							color: #a7a7a7
 
 				.frm-btnwrap
-					width: max-content
+					width: 150px
 					label
 						display: none
-					.frm-btn 
+					.frm-btn
 						position: relative
 						display: flex
 						align-items: center
@@ -703,18 +663,17 @@ figure
 							font-size: 16px
 							color: rgb(255, 255, 255)
 							font-weight: bold
-							text-transform: uppercase
 							border: none
 							background-color: #01a8e3
 							transition: all ease-in-out .3s
-							justify-content: flex-start
+							justify-content: center
 
 						.frm-btn-reset
 							display: none
 						.material-icons
 							color: #ffffff
 							font-size: 30px
-							margin-left: -50px
+							margin-left: -40px
 					&:hover
 						input
 							background-image: linear-gradient( 25deg, #01a8e3 0%, #7fd3f1 100%)
@@ -726,9 +685,9 @@ figure
 				.modal-body
 					.title
 						p,
-						.ri-quill-pen-line 
+						.ri-quill-pen-line
 							font-size: 20px
-						.ri-quill-pen-line 
+						.ri-quill-pen-line
 							padding-right: 10px
 					.wrap-form
 						.form-group
@@ -737,7 +696,7 @@ figure
 							select
 								width: 100%
 						.frm-btnwrap
-							.frm-btn 
+							.frm-btn
 								input
 									width: 150px
 		@media screen and ( max-width: 575px)
@@ -749,13 +708,13 @@ figure
 			.modal-content
 				.modal-body
 					.frm-btnwrap
-						.frm-btn 
+						.frm-btn
 							input
 								width: 210px
 
 #back-to-top
 	position: fixed
-	bottom: 20px
+	bottom: 70px
 	right: 5%
 	width: 50px
 	height: 50px
@@ -772,6 +731,235 @@ figure
 		opacity: 1
 		visibility: visible
 		transition: all ease-in-out .3s
-	em 
+	em
 		color: #ffffff
 		font-size: 18px
+
+.search-page
+	padding: 60px 0
+
+	.search-page-top
+		.page-header
+			h1
+				font-size: 36px
+				font-weight: 500
+				color: #333333
+
+				@media(max-width: 1025px)
+					font-size: 26px
+
+		.searchcontrols
+			padding: 30px 0
+
+			.form-inline
+				.form-group
+					width: 100%
+					position: relative
+					.form-control
+						border: solid 1px #a1a1a1
+						width: 100%
+						height: 40px
+						border-radius: 0
+						&:focus
+							box-shadow: none
+
+					.seachpage-btn
+						display: none
+
+	.searchresults
+		.modulepager
+			display: flex
+			align-items: center
+			padding-bottom: 30px
+			&:nth-child(1)
+				display: none
+
+			.pagination
+				padding: 0
+				list-style: none
+
+				li
+					background-color: rgb(255, 255, 255)
+					width: 38px
+					height: 38px
+					margin-right: 20px
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					transition: ease-in-out all .3s
+
+					a
+						font-size: 18px
+						color: $main-color
+						text-decoration: none
+						width: 100%
+						height: 100%
+						text-align: center
+						line-height: 38px
+
+					&:hover
+						background-color: $main-color
+
+						a
+							color: #fff
+
+					&.active
+						span
+							color: #fff
+							width: 100%
+							height: 100%
+							text-align: center
+							line-height: 38px
+							background-color: $main-color
+	.searchresultlist
+		.searchresult
+			.NeatHtml
+				h3
+					font-size: 18px
+					a
+						font-size: 20px
+						font-weight: 500
+						color: $main-color
+						text-decoration: none
+html body .RadInput input.riEmpty,
+html body .RadInput textarea.riEmpty,
+html body input.RadInput_Empty
+	font-style: normal !important
+.apply-frm
+	padding: 60px 90px
+	margin: 0 auto
+
+	div
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		position: relative
+
+	h4
+		font-size: 16px
+		font-weight: 600
+		color: $main-color
+		text-transform: uppercase
+		margin-bottom: 20px
+
+	.col-left
+		.form-group
+			width: 50%
+			padding: 0 10px
+
+			.label
+				font-size: 14px
+				font-weight: 400
+				color: #999
+				margin-bottom: 4px
+
+			.fa-exclamation-triangle
+				top: 50%
+				transform: translateY(-50%)
+				right: 15px
+				color: red
+
+			.form-control
+				border-radius: 0
+				width: 100%
+				width: 100%
+				border: 1px solid #e5e5e5
+				color: #333
+				font-size: 13px
+				padding: 7px 15px
+				&:focus
+					box-shadow: none
+					outline: none
+
+	.col-right
+		flex: 0 0 100%
+		max-width: 100%
+		display: flex
+		flex-wrap: wrap
+
+		textarea
+			height: 200px
+			width: 100%
+			border: 1px solid #e5e5e5
+			color: #333
+			font-size: 13px
+			padding: 7px 15px
+			border-radius: 0
+
+		.form-group
+			margin-bottom: 10px
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 0 10px
+
+			label
+				.required
+					color: red
+
+	.RadUpload
+		width: auto !important
+
+		.ruFileWrap
+			position: relative
+			display: block
+			height: 50px
+
+			.ruBrowse,
+			.ruFileInput
+				width: 120px
+				height: 50px
+				background: #e5e5e5
+				text-transform: uppercase
+				font-size: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 0
+
+		.ruDropZone
+			display: none
+
+	.frm-btnwrap
+		padding: 0 10px
+		.frm-btn
+			margin-top: 20px
+			text-align: left
+
+			input[type=submit]
+				height: 40px
+				width: 100%
+				max-width: 180px
+				display: inline-flex
+				justify-content: center
+				align-items: center
+				border-radius: 0
+				background: 0 0
+				border: 2px solid #3361ae
+				color: #3361ae
+				text-transform: uppercase
+				&:hover
+					background-color: $main-color
+					color: #ffffff
+
+@media screen and ( max-width: 1024px)
+	.fancybox-slide
+		padding: 15px
+
+	.apply-frm
+		padding: 30px 0
+
+@media screen and ( max-width: 576px)
+	.apply-frm
+		h4
+			font-size: 14px
+
+		.col-left
+			.form-group
+				width: 100%
+
+		.col-right
+			label
+				font-size: 14px
+				.required
+					font-size: 10px

@@ -5,29 +5,30 @@
 <%@ Register Namespace="CanhCam.Web.SharedFilesUI" Assembly="CanhCam.Features.SharedFiles" TagPrefix="portal" %>
 
 <portal:ZonesDisplaySettings runat="server" 
-	ShowDescription="true"
+    ShowDescription="true"
     DescriptionControlType="textarea"
     ShowPrimaryImage="true"
     ShowSecondImage="false"
-	/>
+/>
 <portal:BannerDisplaySettings runat="server" 
-	ShowDescription="true"
+    ShowDescription="true"
     DescriptionControlType="editor"
     ShowThumbnail="false"
     ThumbnailWidth="100"
     ImageWidth="150"
-	/>
+/>
 <portal:NewsDisplaySettings runat="server" 
     ShowAttribute="true"
     ShowSubtitle="true"
-	/>
+/>
 <portal:SharedFilesDisplaySettings runat="server" 
-	ShowFolder="false"
+    ShowFolder="false"
     ShowYear="false"
-	/>
-<portal:SearchResultsDisplaySettings runat="server" 
-	PageId="3"
-	/>
+/>
+    
+<portal:ProductDisplaySettings runat="server" 
+    ShowComments="true"
+/>
 
 <portal:LayoutDisplaySettings runat="server" 
     LeftSideNoRightSideCss="col-left"

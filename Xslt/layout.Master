@@ -187,64 +187,13 @@
 									aria-hidden="true">×</span></button>
 						</div>
 						<div class="modal-body">
-							<div class="title"><em class="ri-quill-pen-line"></em>
-								<p>Đăng ký dịch vụ</p>
-							</div>
-							<div class="desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-									gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-							</div>
-							<div class="wrap-form">
-								<div class="form-group">
-									<input type="text" placeholder="Họ tên">
-								</div>
-								<div class="form-group">
-									<input type="text" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<input type="text" placeholder="Số điện thoại">
-								</div>
-								<div class="form-group">
-									<select placeholder="Chọn khoa">
-										<option value="Khoa 1">Khoa 1</option>
-										<option value="Khoa 2">Khoa 2</option>
-										<option value="Khoa 3">Khoa 3</option>
-										<option value="Khoa 4">Khoa 4</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<select placeholder="Chọn bác sĩ">
-										<option value="Khoa 1">Khoa 1</option>
-										<option value="Khoa 2">Khoa 2</option>
-										<option value="Khoa 3">Khoa 3</option>
-										<option value="Khoa 4">Khoa 4</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<select placeholder="Chọn gói dịch vụ">
-										<option value="Khoa 1">Khoa 1</option>
-										<option value="Khoa 2">Khoa 2</option>
-										<option value="Khoa 3">Khoa 3</option>
-										<option value="Khoa 4">Khoa 4</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<textarea type="text" placeholder="Nhu cầu khám bệnh" cols="30"
-										rows="10"></textarea>
-								</div>
-								<div class="form-group frm-btnwrap">
-									<div class="frm-btn">
-										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name=""
-											value="Đăng ký khám">
-									</div>
-								</div>
-							</div>
+							<portal:modulewrapper id="mdl245" runat="server" configuremoduleid="245" />
+							<portal:modulewrapper id="mdl246" runat="server" configuremoduleid="246" />
+							<em class="material-icons">arrow_right_alt</em>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 			<div class="modal fade" id="popupYK" tabindex="-1" role="dialog">
 				<div class="modal-dialog modal-dialog-centered container" role="document">
 					<div class="modal-content">
@@ -253,37 +202,9 @@
 									aria-hidden="true">×</span></button>
 						</div>
 						<div class="modal-body">
-							<div class="title"><em class="ri-questionnaire-line"></em>
-								<p>Form gửi ý kiến</p>
-							</div>
-							<div class="desc">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-									gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-							</div>
-							<div class="wrap-form">
-								<div class="form-group">
-									<input type="text" placeholder="Họ tên">
-								</div>
-								<div class="form-group">
-									<input type="text" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<input type="text" placeholder="Số điện thoại">
-								</div>
-								<div class="form-group">
-									<input type="text" placeholder="Tiêu đề">
-								</div>
-								<div class="form-group">
-									<textarea type="text" placeholder="Nội dung" cols="30" rows="10"></textarea>
-								</div>
-								<div class="form-group frm-btnwrap">
-									<div class="frm-btn">
-										<input class="btn btn-sign btn-default frm-btn-submit" type="submit" name=""
-											value="Gửi">
-									</div>
-								</div>
-							</div>
+							<portal:modulewrapper id="mdl248" runat="server" configuremoduleid="248" />
+							<portal:modulewrapper id="mdl249" runat="server" configuremoduleid="249" />
+							<em class="material-icons">arrow_right_alt</em>
 						</div>
 					</div>
 				</div>
@@ -364,6 +285,7 @@
 	</form>
 	<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
 	<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	<script src="/Data/Sites/1/skins/default/js/compare.js"></script>
 </body>
 
 </html>

@@ -405,7 +405,7 @@
     <xsl:template match="Zone" mode="ThanhTuu1">
         <xsl:if test="position()=1">
             <div class="col-xl-3 col-lg-3">
-                <div class="item">
+                <div class="item left">
                     <h3>
                         <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                     </h3>
@@ -427,7 +427,7 @@
     <xsl:template match="Zone" mode="ThanhTuu2">
         <xsl:if test="position()=2">
             <div class="col-xl-3 col-lg-3">
-                <div class="item">
+                <div class="item left">
                     <h3>
                         <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                     </h3>
