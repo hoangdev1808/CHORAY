@@ -214,8 +214,6 @@
 					
 					color: rgb(255, 255, 255)
 					line-height: 1.2
-
-
 		.swiper-button-next,
 		.swiper-button-prev
 			top: 50%
@@ -234,26 +232,28 @@
 				border: none
 				&::before
 					color: #ffffff
-
 		.swiper-button-next
-			right: -35px
-			@media screen and ( max-width: 375px)
-				right: 0
+			right: -50px
 			&::before
 				font-family: Linearicons-Free
 				content: '\e876'
 				font-size: 18px
 				color: #999999
 		.swiper-button-prev
-			left: -35px
-			@media screen and ( max-width: 375px)
-				left: 0
+			left: -50px
 			&::before
 				font-family: Linearicons-Free
 				content: '\e875'
 				font-size: 18px
 				color: #999999
-
+		@media screen and ( max-width: 1280px)
+			.swiper-button-next,
+			.swiper-button-prev
+				top: -20px
+			.swiper-button-next
+				right: 93%
+			.swiper-button-prev
+				left: 0
 
 
 

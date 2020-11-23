@@ -76,6 +76,7 @@
                             </h1>
                         </a>
                     </div>
+                    <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                 </figcaption>
             </figure>
         </div>

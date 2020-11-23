@@ -77,6 +77,7 @@
                     </h2>
                 </div>
             </a>
+            <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
         </li>
     </xsl:template>
 </xsl:stylesheet>

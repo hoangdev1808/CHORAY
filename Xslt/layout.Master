@@ -13,8 +13,10 @@
 	<portal:Favicon ID="Favicon1" runat="server" />
 	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
 	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 </head>
@@ -33,9 +35,6 @@
 					<nav>
 						<div class="logo">
 							<portal:modulewrapper id="mdl138" runat="server" configuremoduleid="138" />
-						</div>
-						<div class="logo-scroll">
-							<portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
 						</div>
 						<div class="nav-mobile"></div>
 						<div class="toggle-menu"></div>

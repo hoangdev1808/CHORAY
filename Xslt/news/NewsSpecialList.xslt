@@ -51,6 +51,7 @@
                                 </h1>
                             </a>
                         </div>
+                        <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                         <div class="categroly">
                             <a>
                                 <xsl:attribute name="href">

@@ -24,9 +24,7 @@
                                 <xsl:value-of select="Title"></xsl:value-of>
                             </xsl:attribute>
                             <xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
-                            <div class="icon">
-                               
-                            </div>
+                            <div class="icon"></div>
                         </a>
                     </div>
                 </div>
@@ -77,9 +75,9 @@
                                 <h1>
                                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                                 </h1>
-                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
                         </div>
+                        <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                     </figcaption>
                 </figure>
             </div>
@@ -114,9 +112,9 @@
                                 <h1>
                                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                                 </h1>
-                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
                         </div>
+                        <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                     </figcaption>
                 </figure>
             </div>
@@ -151,9 +149,9 @@
                                 <h1>
                                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                                 </h1>
-                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
                         </div>
+                        <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                         <a  class="btn btn-detail">
                             <xsl:attribute name="href">
                                 <xsl:value-of select="Url"></xsl:value-of>

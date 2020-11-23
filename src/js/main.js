@@ -313,7 +313,7 @@ const checkLayoutBanner = () => {
     const heightHeader = $('header').outerHeight();
     const mainBanner = $('#home-banner');
     if (mainBanner.length >= 1) {
-        $('main').css('padding-top', heightHeader)
+        $('main').css('padding-top', 0)
     } else if (pagesBanner.length >= 1) {
         $('main').css('padding-top', heightHeader)
     } else {
@@ -514,6 +514,9 @@ function moverComment(){
     $('.comment-block .container h5').appendTo('.commentlist').before($('.comment'));
     $('.commentlist p').appendTo('.commentlist h5');
 }
+function phantrang() {
+    $('.modulepager').find('.pagination').find('li>a.NextPage, li>a.LastPage, li>a.BackPage, li>a.FirstPage').parent().hide()
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenuMobile();
@@ -533,4 +536,5 @@ document.addEventListener('DOMContentLoaded', () => {
     rangeDate();
     showBackToTop();
     moverComment();
+    phantrang();
 });

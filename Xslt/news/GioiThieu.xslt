@@ -9,6 +9,10 @@
     <xsl:template match="Zone">
         <xsl:if test="position()=1">
             <section class="section about-1">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6"></div>
@@ -21,6 +25,10 @@
         </xsl:if>
         <xsl:if test="position()=2">
             <section class="section about-2">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -59,6 +67,10 @@
         </xsl:if>
         <xsl:if test="position()=3">
             <section class="section about-3">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -79,6 +91,10 @@
         </xsl:if>
         <xsl:if test="position()=4">
             <section class="section about-4">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-8">
@@ -110,6 +126,10 @@
         </xsl:if>
         <xsl:if test="position()=5">
             <section class="section about-5">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -124,6 +144,10 @@
         </xsl:if>
         <xsl:if test="position()=6">
             <section class="section about-6">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -141,6 +165,10 @@
         </xsl:if>
         <xsl:if test="position()=7">
             <section class="section about-7">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -163,6 +191,10 @@
         </xsl:if>
         <xsl:if test="position()=8">
             <section class="section about-8">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="block-title">
                         <h2>
@@ -180,6 +212,10 @@
         </xsl:if>
         <xsl:if test="position()=9">
             <section class="section about-9">
+                <xsl:attribute name="id">
+                    <xsl:text disable-output-escaping="yes">about-</xsl:text>
+                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
                 <div class="container">
                     <div class="shape-block">
                         <div class="block-title">
@@ -338,7 +374,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="News" mode="Bottom">
-        <xsl:if test="position()&gt;1 and position()&lt;4">
+        <xsl:if test="position()&gt;1 and position()&lt;5">
             <div class="item">
                 <figure>
                     <div class="img">
