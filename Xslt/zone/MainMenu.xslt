@@ -48,6 +48,11 @@
                         <xsl:value-of select="Title"></xsl:value-of>
                     </a>
                 </xsl:if>
+                <xsl:if test="ZoneId=172">
+                    <xsl:attribute name="class">
+                        <xsl:text>nav-item dropdown</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
                 <xsl:if test="ZoneId=85">
                     <xsl:attribute name="class">
                         <xsl:text>nav-item dropdown</xsl:text>
@@ -72,6 +77,11 @@
                             </ul>
                         </xsl:when>
                         <xsl:when test="ZoneId=85">
+                            <ul class="dropdown-menu">
+                                <xsl:apply-templates select="Zone" mode="DropDown"></xsl:apply-templates>
+                            </ul>
+                        </xsl:when>
+                        <xsl:when test="ZoneId=172">
                             <ul class="dropdown-menu">
                                 <xsl:apply-templates select="Zone" mode="DropDown"></xsl:apply-templates>
                             </ul>

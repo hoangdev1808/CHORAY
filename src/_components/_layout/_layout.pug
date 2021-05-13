@@ -26,11 +26,11 @@ html(lang="en")
 					include _footer.pug
 			include _tool.pug
 			// Modal
-			#popupTV.modal.fade(tabindex='-1', role='dialog')
+			#popupTV.modal.fade(tabindex='-1' role='dialog')
 				.modal-dialog.modal-dialog-centered.container(role='document')
 					.modal-content
 						.modal-header
-							button.close(type='button', data-dismiss='modal', aria-label='Close')
+							button.close(type='button' data-dismiss='modal' aria-label='Close')
 								span(aria-hidden='true') ×
 						.modal-body 
 							.title
@@ -46,16 +46,16 @@ html(lang="en")
 								.form-group
 									input(type="text" placeholder="Số điện thoại")
 								.form-group
-									textarea(type="text" placeholder="Nội dung", cols="30", rows="10")
+									textarea(type="text" placeholder="Nội dung" cols="30" rows="10")
 								.form-group.frm-btnwrap
 									.frm-btn
 										input.btn.btn-sign.btn-default.frm-btn-submit(type='submit' name="" value='Đăng ký')
 										em.material-icons arrow_right_alt
-			#popupDV.modal.fade(tabindex='-1', role='dialog')
+			#popupDV.modal.fade(tabindex='-1' role='dialog')
 				.modal-dialog.modal-dialog-centered.container(role='document')
 					.modal-content
 						.modal-header
-							button.close(type='button', data-dismiss='modal', aria-label='Close')
+							button.close(type='button' data-dismiss='modal' aria-label='Close')
 								span(aria-hidden='true') ×
 						.modal-body 
 							.title
@@ -89,16 +89,16 @@ html(lang="en")
 										option(value="Khoa 3") Khoa 3
 										option(value="Khoa 4") Khoa 4
 								.form-group
-									textarea(type="text" placeholder="Nhu cầu khám bệnh", cols="30", rows="10")
+									textarea(type="text" placeholder="Nhu cầu khám bệnh" cols="30" rows="10")
 								.form-group.frm-btnwrap
 									.frm-btn
 										input.btn.btn-sign.btn-default.frm-btn-submit(type='submit' name="" value='Đăng ký khám')
 										em.material-icons arrow_right_alt
-			#popupKB.modal.fade(tabindex='-1', role='dialog')
+			#popupKB.modal.fade(tabindex='-1' role='dialog')
 				.modal-dialog.modal-dialog-centered.container(role='document')
 					.modal-content
 						.modal-header
-							button.close(type='button', data-dismiss='modal', aria-label='Close')
+							button.close(type='button' data-dismiss='modal' aria-label='Close')
 								span(aria-hidden='true') ×
 						.modal-body 
 							.title
@@ -122,16 +122,16 @@ html(lang="en")
 								.form-group
 									input(type="text" name="daterange" placeholder="Chọn ngày khám")
 								.form-group
-									textarea(type="text" placeholder="Nhu cầu khám bệnh", cols="30", rows="10")
+									textarea(type="text" placeholder="Nhu cầu khám bệnh" cols="30" rows="10")
 								.form-group.frm-btnwrap
 									.frm-btn
 										input.btn.btn-sign.btn-default.frm-btn-submit(type='submit' name="" value='Đăng ký khám')
 										em.material-icons arrow_right_alt
-			#popupYK.modal.fade(tabindex='-1', role='dialog')
+			#popupYK.modal.fade(tabindex='-1' role='dialog')
 				.modal-dialog.modal-dialog-centered.container(role='document')
 					.modal-content
 						.modal-header
-							button.close(type='button', data-dismiss='modal', aria-label='Close')
+							button.close(type='button' data-dismiss='modal' aria-label='Close')
 								span(aria-hidden='true') ×
 						.modal-body 
 							.title
@@ -149,7 +149,7 @@ html(lang="en")
 								.form-group
 									input(type="text" placeholder="Tiêu đề")
 								.form-group
-									textarea(type="text" placeholder="Nội dung", cols="30", rows="10")
+									textarea(type="text" placeholder="Nội dung" cols="30" rows="10")
 								.form-group.frm-btnwrap
 									.frm-btn
 										input.btn.btn-sign.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
@@ -158,5 +158,5 @@ html(lang="en")
 		#back-to-top
 			em.lnr.lnr-arrow-up
 		script(type="text/javascript" src="./js/core.min.js")
+
 		script(type="text/javascript" src="./js/main.min.js")
-		block scripts
